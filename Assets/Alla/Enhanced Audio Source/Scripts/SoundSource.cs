@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
+using FMOD.Studio;
+using FMODUnity;
 
 [ExecuteInEditMode]
 public class SoundSource : MonoBehaviour
@@ -73,8 +75,8 @@ public class SoundSource : MonoBehaviour
     [SerializeField] public AnimationCurve onAxisToOffAxisCurve;
     [Tooltip("")]
     [SerializeField] public AnimationCurve distanceToVolumeCurve;
-    [HideInInspector]
-    public AudioSource audioSource;
+    
+    public StudioEventEmitter audioSource;
     [HideInInspector]
     public AudioLowPassFilter lowPassFilter;
     [Tooltip("Angle in degrees between the player and the Sound Source")]
@@ -131,32 +133,18 @@ public class SoundSource : MonoBehaviour
 
     private void Awake(){
 
-        audioSource = GetComponentInChildren<>();
-        audioSource.clip = audioClip;
+        audioSource = GetComponentInChildren<StudioEventEmitter>();
+        
         lowPassFilter = GetComponentInChildren<AudioLowPassFilter>();
     }
 
     private void Start(){
-        audioSource.outputAudioMixerGroup = output;
-        audioSource.spatialBlend = spatialBlend;
-        audioSource.mute = mute;
-        audioSource.loop = loop;
-        audioSource.volume = volume;
-        audioSource.pitch = pitch;
-        audioSource.dopplerLevel = doppler;
-        audioSource.minDistance = minDistance;
-        audioSource.maxDistance = maxDistance;
+  
     }
 
     public void Update(){
 
-        audioSource.playOnAwake = playOnStart;
-        audioSource.spatialBlend = spatialBlend;
-        audioSource.spread = pointSourceOrEnveloping;
-        audioSource.mute = mute;
-        audioSource.volume = volume;
-        audioSource.minDistance = minDistance;
-        audioSource.maxDistance = maxDistance;
+  
         Vector3 directionToListener = transform.position - listener.transform.position ;
         float angel = Vector3.Angle(directionToListener, listener.transform.forward);
         float distance = Vector3.Distance(transform.position, listener.transform.position);
@@ -180,7 +168,7 @@ public class SoundSource : MonoBehaviour
 
            
             //angleToFreq = angleToPlayer * lpfFreqMulti;
-            audioSource.volume= evaluatedVolume * Mathf.Clamp(1 - (angel / listener.angel), 0 , 1 ) * distanceToVolumeCurve.Evaluate(Mathf.Clamp(1 - (distance / listener.distance), 0, 1));
+            audioSource.SetParameter("Axis(Off-On)", evaluatedVolume * Mathf.Clamp(1 - (angel / listener.angel), 0, 1) * distanceToVolumeCurve.Evaluate(Mathf.Clamp(1 - (distance / listener.distance), 0, 1)));
         }
    
         evaluatedVolume = onAxisToOffAxisCurve.Evaluate(angleToPlayer );
