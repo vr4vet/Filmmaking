@@ -7,6 +7,7 @@ TagManager:
   - YrkesTitle
   - OcupationName
   - Title
+  - projectile
   layers:
   - Default
   - TransparentFX
@@ -21,6 +22,7 @@ TagManager:
   - Grabbable
   - Structure
   - Grab
+  - DynamicPose
   - 
   - 
   - 
@@ -28,8 +30,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Hand
   - 
   - 
   - 
