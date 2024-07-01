@@ -40,6 +40,16 @@ namespace HurricaneVR.Framework.Components
 
         public Vector3 OpenPosition;
 
+        // Variables to store initial configuration
+        private ConfigurableJointMotion initialXMotion;
+        private ConfigurableJointMotion initialYMotion;
+        private ConfigurableJointMotion initialZMotion;
+        private ConfigurableJointMotion initialAngularXMotion;
+        private ConfigurableJointMotion initialAngularYMotion;
+        private ConfigurableJointMotion initialAngularZMotion;
+        private Vector3 initialAnchor;
+        private Vector3 initialConnectedAnchor;
+
 
         [Header("Debug")]
         public bool UpdateSpring;
@@ -74,6 +84,91 @@ namespace HurricaneVR.Framework.Components
             {
                 Closed = true;
             }
+        }
+
+        void Start()
+        {
+            SaveInitialJointConfiguration();
+            Deactivate();
+        }
+
+        public void Activate()
+        {
+            // Restore initial motion settings
+            _joint.xMotion = initialXMotion;
+            _joint.yMotion = initialYMotion;
+            _joint.zMotion = initialZMotion;
+            _joint.angularXMotion = initialAngularXMotion;
+            _joint.angularYMotion = initialAngularYMotion;
+            _joint.angularZMotion = initialAngularZMotion;
+
+            // Restore initial anchor settings
+            _joint.anchor = initialAnchor;
+            _joint.connectedAnchor = initialConnectedAnchor;
+
+            // Repeat for _limitJoint if necessary
+            _limitJoint.xMotion = initialXMotion;
+            _limitJoint.yMotion = initialYMotion;
+            _limitJoint.zMotion = initialZMotion;
+            _limitJoint.angularXMotion = initialAngularXMotion;
+            _limitJoint.angularYMotion = initialAngularYMotion;
+            _limitJoint.angularZMotion = initialAngularZMotion;
+
+            _limitJoint.anchor = initialAnchor;
+            _limitJoint.connectedAnchor = initialConnectedAnchor;
+        }
+
+        public void Deactivate()
+        {
+            // Store current world position
+            var currentPosition = transform.position;
+
+            // Update connectedAnchor to current position
+            if (ConnectedBody)
+            {
+                _joint.connectedAnchor = ConnectedBody.transform.InverseTransformPoint(currentPosition);
+            }
+            else
+            {
+                _joint.connectedAnchor = currentPosition;
+            }
+
+            // Lock all motions
+            _joint.xMotion = ConfigurableJointMotion.Locked;
+            _joint.yMotion = ConfigurableJointMotion.Locked;
+            _joint.zMotion = ConfigurableJointMotion.Locked;
+            _joint.angularXMotion = ConfigurableJointMotion.Locked;
+            _joint.angularYMotion = ConfigurableJointMotion.Locked;
+            _joint.angularZMotion = ConfigurableJointMotion.Locked;
+
+            // Repeat for _limitJoint if necessary
+            if (ConnectedBody)
+            {
+                _limitJoint.connectedAnchor = ConnectedBody.transform.InverseTransformPoint(currentPosition);
+            }
+            else
+            {
+                _limitJoint.connectedAnchor = currentPosition;
+            }
+
+            _limitJoint.xMotion = ConfigurableJointMotion.Locked;
+            _limitJoint.yMotion = ConfigurableJointMotion.Locked;
+            _limitJoint.zMotion = ConfigurableJointMotion.Locked;
+            _limitJoint.angularXMotion = ConfigurableJointMotion.Locked;
+            _limitJoint.angularYMotion = ConfigurableJointMotion.Locked;
+            _limitJoint.angularZMotion = ConfigurableJointMotion.Locked;
+        }
+
+        private void SaveInitialJointConfiguration()
+        {
+            initialXMotion = _joint.xMotion;
+            initialYMotion = _joint.yMotion;
+            initialZMotion = _joint.zMotion;
+            initialAngularXMotion = _joint.angularXMotion;
+            initialAngularYMotion = _joint.angularYMotion;
+            initialAngularZMotion = _joint.angularZMotion;
+            initialAnchor = _joint.anchor;
+            initialConnectedAnchor = _joint.connectedAnchor;
         }
 
         private void SetupJoint()
