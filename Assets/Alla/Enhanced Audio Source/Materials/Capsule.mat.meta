@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 70ea98148da8a43fcb155ec10aad3c8f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211004
+  packageName: Enhanced Audio Source
+  packageVersion: 1.0
+  assetPath: Assets/Enhanced Audio Source/Materials/Capsule.mat
+  uploadId: 477619
