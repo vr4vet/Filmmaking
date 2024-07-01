@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a09580a4fc30f4cdeba1d5bbc041a737
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211004
+  packageName: Enhanced Audio Source
+  packageVersion: 1.0
+  assetPath: Assets/Enhanced Audio Source/Scripts/playOnStart.cs
+  uploadId: 477619

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d40742358667944208b4878196d201a9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211004
+  packageName: Enhanced Audio Source
+  packageVersion: 1.0
+  assetPath: Assets/Enhanced Audio Source/Scenes/Example SceneSettings.lighting
+  uploadId: 477619
