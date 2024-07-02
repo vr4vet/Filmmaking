@@ -416,8 +416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358b8ba4cac98274ea8315ff77c64b7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angel: 19
-  distance: 2.04
+  angel: 90
+  distance: 10
 --- !u!114 &1154779755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +486,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1660705605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660705599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Emitters:
+  - Target: {fileID: 1660705603}
+    Params: []
+  TriggerEvent: 0
 --- !u!1001 &1685770927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -522,7 +539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: audioSource
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1660705603}
     - target: {fileID: 7071928951427678464, guid: f4178dc2bbf4f45869a396b70764e157,
         type: 3}
       propertyPath: onAxisAngle
@@ -541,7 +558,7 @@ PrefabInstance:
     - target: {fileID: 7071928951427678464, guid: f4178dc2bbf4f45869a396b70764e157,
         type: 3}
       propertyPath: angleToPlayer
-      value: 38
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7071928951427678464, guid: f4178dc2bbf4f45869a396b70764e157,
         type: 3}
