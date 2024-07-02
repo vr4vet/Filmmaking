@@ -348,6 +348,7 @@ namespace HurricaneVR.Framework.Core.Player
 
         protected virtual void CheckGrounded()
         {
+            
             var radius = CharacterController.radius * GroundedRadiusFactor;
             var origin = CharacterController.center - Vector3.up * (.5f * CharacterController.height - radius);
             IsGrounded = Physics.SphereCast(

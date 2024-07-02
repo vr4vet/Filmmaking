@@ -33,13 +33,13 @@ namespace HurricaneVR.Framework.Weapons.Guns
         protected virtual IEnumerator LoadAnimationRoutine(HVRGrabbable grabbable)
         {
             CanRemoveGrabbable = false;
-
+            
             var elapsed = 0f;
             var targetPosition = GetTargetPosition(grabbable);
             var targetRotation = GetTargetRotation(grabbable);
             var direction = targetPosition - grabbable.transform.localPosition;
             var speed = direction.magnitude / AnimationTime;
-
+           
             grabbable.transform.position = transform.position + MagazineDirection * MagazineTravel;
             grabbable.transform.localRotation = targetRotation;
 

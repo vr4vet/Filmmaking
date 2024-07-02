@@ -563,12 +563,16 @@ namespace HurricaneVR.Framework.Core.Grabbers
 
         protected virtual void PositionGrabbable(HVRGrabbable grabbable)
         {
-            grabbable.transform.localPosition = GetTargetPosition(grabbable);
+            Vector3 v1 = grabbable.transform.localPosition + (Vector3.Project(-grabbable.transform.localPosition, grabbable.transform.forward) * Mathf.Sign((Vector3.Dot(-grabbable.transform.localPosition, grabbable.transform.forward))));
+            grabbable.transform.localPosition = grabbable.transform.localPosition-v1;
         }
 
         protected virtual void RotateGrabbable(HVRGrabbable grabbable)
         {
-            grabbable.transform.localRotation = GetTargetRotation(grabbable);
+
+            
+
+           // grabbable.transform.forward = Vector3.Dot(grabbable.transform.forward, transform.forward)*Vector3.Project(grabbable.transform.forward, transform.forward);
         }
 
         protected virtual void HandleRigidBodyGrab(HVRGrabbable grabbable)

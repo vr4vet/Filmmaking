@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6555875874395515535}
   - component: {fileID: 4079876365266177423}
   - component: {fileID: 2628376945685686650}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 4524525180550856836}
   - component: {fileID: 850604222558441008}
   - component: {fileID: 5661107160898153678}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 8445354563339187312}
   - component: {fileID: 3389295640263634406}
   - component: {fileID: 2162225312350441011}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 7489349567576139446}
   - component: {fileID: 6282886083890799155}
   - component: {fileID: 8170670060966865389}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4388839409100209032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Grab points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 5336358187603562333}
   - component: {fileID: 5364142812922094444}
   - component: {fileID: 8535634605680616071}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tri Pod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ MonoBehaviour:
   GrabBehaviour: 0
   PoseType: 0
   TrackingType: 0
-  HoldType: 1
+  HoldType: 2
   GrabControl: 0
   OverrideGrabTrigger: 0
   GrabTrigger: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 9055263490229115286}
   - component: {fileID: 2304212438999578980}
   - component: {fileID: 7064768958453406481}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,8 +724,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8950187965308734625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.102, z: 0}
-  m_LocalScale: {x: 0.03, y: 1.2372658, z: 0.03}
+  m_LocalPosition: {x: 0, y: 0.1123, z: 0}
+  m_LocalScale: {x: 0.03, y: 1.2167271, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5336358187603562333}

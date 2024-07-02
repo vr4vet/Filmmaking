@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3605430438760793011}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,10 +27,71 @@ Transform:
   m_LocalPosition: {x: 0.822, y: -0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4083584326764289235}
   m_Father: {fileID: 7511438609213368113}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1798972426233035649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4083584326764289235}
+  - component: {fileID: 1633207939419765520}
+  - component: {fileID: 2830807889795418425}
+  m_Layer: 0
+  m_Name: Mic Hearing Point
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4083584326764289235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798972426233035649}
+  m_LocalRotation: {x: -0.6624176, y: 0.24739215, z: -0.247392, w: 0.66241765}
+  m_LocalPosition: {x: 0.0496, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3605430438760793011}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -49.042, y: 90, z: -90}
+--- !u!114 &1633207939419765520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798972426233035649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358b8ba4cac98274ea8315ff77c64b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angel: 90
+  distance: 10
+--- !u!114 &2830807889795418425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798972426233035649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &2631655760862935394
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +103,7 @@ GameObject:
   - component: {fileID: 9038986726740248923}
   - component: {fileID: 1763227415087535353}
   - component: {fileID: 935455724910538963}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SledgeHammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3757886296962222842}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: orient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6770348999612688093}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +253,7 @@ GameObject:
   - component: {fileID: 5986963670909443521}
   - component: {fileID: 3377497076554896807}
   - component: {fileID: 4119996216504463243}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Boom mic 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +295,7 @@ MonoBehaviour:
   GrabBehaviour: 0
   PoseType: 0
   TrackingType: 0
-  HoldType: 1
+  HoldType: 2
   GrabControl: 0
   OverrideGrabTrigger: 0
   GrabTrigger: 0
@@ -252,7 +313,7 @@ MonoBehaviour:
   ShowGrabIndicator: 1
   ShowTriggerGrabIndicator: 1
   ShowForceGrabIndicator: 1
-  ForceGrabbable: 0
+  ForceGrabbable: 1
   ForcePullOverride: {fileID: 0}
   JointOverride: {fileID: 0}
   OneHandStrength: {fileID: 0}
@@ -479,7 +540,7 @@ GameObject:
   - component: {fileID: 930409215877959679}
   - component: {fileID: 2943334474109017340}
   - component: {fileID: 6850431107116038881}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6682608558560503103}
   - component: {fileID: 8629837711247445708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
