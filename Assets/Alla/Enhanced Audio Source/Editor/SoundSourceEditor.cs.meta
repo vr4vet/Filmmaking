@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 288022e92f35e498fbd4349962ce476e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211004
+  packageName: Enhanced Audio Source
+  packageVersion: 1.0
+  assetPath: Assets/Enhanced Audio Source/Editor/SoundSourceEditor.cs
+  uploadId: 477619
