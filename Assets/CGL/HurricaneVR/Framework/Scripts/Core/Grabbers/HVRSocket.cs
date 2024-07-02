@@ -497,6 +497,7 @@ namespace HurricaneVR.Framework.Core.Grabbers
 
 
             AttachGrabbable(grabbable);
+            PositionGrabbable(grabbable);
             OnGrabbableParented(grabbable);
             HandleRigidBodyGrab(grabbable);
             PlaySocketedSFX(grabbable.Socketable);
@@ -557,16 +558,22 @@ namespace HurricaneVR.Framework.Core.Grabbers
         protected virtual void OnGrabbableParented(HVRGrabbable grabbable)
         {
             UpdateScale(grabbable);
-            PositionGrabbable(grabbable);
+          
             RotateGrabbable(grabbable);
         }
-
+        
         protected virtual void PositionGrabbable(HVRGrabbable grabbable)
         {
-            Vector3 v1 = grabbable.transform.localPosition + (Vector3.Project(-grabbable.transform.localPosition, grabbable.transform.forward) * Mathf.Sign((Vector3.Dot(-grabbable.transform.localPosition, grabbable.transform.forward))));
-            grabbable.transform.localPosition = grabbable.transform.localPosition-v1;
-        }
+            
+            Vector3 line  = Vector3.Project(transform.position - grabbable.transform.position, grabbable.transform.right);
+            Debug.DrawLine(grabbable.transform.position, grabbable.transform.position+line,Color.red,10);
+                line = transform.position - (grabbable.transform.position + line);
+            Debug.DrawLine(grabbable.transform.position, grabbable.transform.position + line, Color.green, 10);
 
+
+            grabbable.transform.position = grabbable.transform.position + line;
+        }
+       
         protected virtual void RotateGrabbable(HVRGrabbable grabbable)
         {
 
