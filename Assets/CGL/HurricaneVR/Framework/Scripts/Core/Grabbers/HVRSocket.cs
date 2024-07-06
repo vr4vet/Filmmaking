@@ -101,6 +101,8 @@ namespace HurricaneVR.Framework.Core.Grabbers
         [Tooltip("Fires when an AutoSpawnedPrefab is instantiated.")]
         public SocketSpawnEvent SpawnedPrefab = new SocketSpawnEvent();
 
+        public bool ignorePose;
+
 
         [Header("Debugging")]
         public bool DebugScale;
@@ -513,6 +515,7 @@ namespace HurricaneVR.Framework.Core.Grabbers
             grabbable.transform.parent = transform;
         }
 
+
         /// <summary>
         /// Returns the socketed local position
         /// </summary>
@@ -558,25 +561,38 @@ namespace HurricaneVR.Framework.Core.Grabbers
         protected virtual void OnGrabbableParented(HVRGrabbable grabbable)
         {
             UpdateScale(grabbable);
-          
+            if (!ignorePose)
+            {
+                PositionGrabbable(grabbable);
+            }
             RotateGrabbable(grabbable);
         }
-        
+
         protected virtual void PositionGrabbable(HVRGrabbable grabbable)
         {
-            
-            Vector3 line  = Vector3.Project(transform.position - grabbable.transform.position, grabbable.transform.right);
-            Debug.DrawLine(grabbable.transform.position, grabbable.transform.position+line,Color.red,10);
+            if (ignorePose)
+            {
+                Vector3 line = Vector3.Project(transform.position - grabbable.transform.position, grabbable.transform.right);
+                Debug.DrawLine(grabbable.transform.position, grabbable.transform.position + line, Color.red, 10);
                 line = transform.position - (grabbable.transform.position + line);
-            Debug.DrawLine(grabbable.transform.position, grabbable.transform.position + line, Color.green, 10);
+                Debug.DrawLine(grabbable.transform.position, grabbable.transform.position + line, Color.green, 10);
 
 
-            grabbable.transform.position = grabbable.transform.position + line;
+                grabbable.transform.position = grabbable.transform.position + line;
+            }
+            else
+            {
+                grabbable.transform.localPosition = GetTargetPosition(grabbable);
+            }
+
         }
-       
+
         protected virtual void RotateGrabbable(HVRGrabbable grabbable)
         {
-
+            if (!ignorePose)
+            {
+                grabbable.transform.localRotation = GetTargetRotation(grabbable);
+            }
             
 
            // grabbable.transform.forward = Vector3.Dot(grabbable.transform.forward, transform.forward)*Vector3.Project(grabbable.transform.forward, transform.forward);
@@ -780,6 +796,11 @@ namespace HurricaneVR.Framework.Core.Grabbers
             return true;
         }
 
+        public void Detach()
+        {
+            ForceRelease();
+        }
+
 
         protected virtual IEnumerator GrabTimeoutRoutine(HVRGrabbable grabbable)
         {
@@ -820,6 +841,7 @@ namespace HurricaneVR.Framework.Core.Grabbers
 
             return (point - ourPoint).sqrMagnitude;
         }
+
     }
 
     [Serializable]
