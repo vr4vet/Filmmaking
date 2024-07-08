@@ -42,19 +42,17 @@ public class SoundSource : MonoBehaviour
 
             [Space(20)]
     
-    [Range(0, 98)]
+    [Range(0, 10)]
     [Tooltip("Max distance sets the point that audio will stop attenuating")]
     public float maxDistance = 1;
-    [Range(0, 50)]
+    [Range(0, 5)]
     [Tooltip("Inside the min distance audio will be loudest, outside of the min distance the audio will attenuate till the max distance")]
     public float minDistance = 10;
 
     [Range(0, 360)]
     [Tooltip("The angle in which the sound will have no filtering")]
     public float onAxisAngle;
-    [Range(0, 360)]
-    [Tooltip("The angle in which the sound will have maximum low pass filtering")]
-    public float offAxisAngle;
+   
 
     [Tooltip("View the horizontal perspective of the on & off Axis angles. Viewing horizontal or vertical does not affect the audio at all")]
     public bool viewHorizontal = true;
@@ -130,7 +128,7 @@ public class SoundSource : MonoBehaviour
     [HideInInspector]
     public Color offAxisColor = Color.red;
 
-
+    public AudioLevelUI audioLevelUI;
     private void Awake(){
 
         audioSource = GetComponentInChildren<StudioEventEmitter>();
@@ -166,19 +164,23 @@ public class SoundSource : MonoBehaviour
 
         if (angleToPlayer >= 0 && angleToPlayer <= 180){
 
-           
+
             //angleToFreq = angleToPlayer * lpfFreqMulti;
-            audioSource.SetParameter("Axis(Off-On)", evaluatedVolume * Mathf.Clamp(1 - (angel / listener.angel), 0, 1) * distanceToVolumeCurve.Evaluate(Mathf.Clamp(1 - (distance / listener.distance), 0, 1)));
+            float volume = evaluatedVolume * Mathf.Clamp(1 - (angel / listener.angel), 0, 1) * distanceToVolumeCurve.Evaluate(Mathf.Clamp(1 - (distance / listener.distance), 0, 1));
+            audioSource.SetParameter("Axis(Off-On)", volume);
+            audioLevelUI.SetValue(volume);
         }
    
         evaluatedVolume = onAxisToOffAxisCurve.Evaluate(angleToPlayer );
         Keyframe[] keyframes = onAxisToOffAxisCurve.keys;
         keyframes[0].time = onAxisAngle / 2;
         keyframes[0].value = 1;
-        keyframes[1].time = offAxisAngle / 2;
+        keyframes[1].time = onAxisAngle / 2;
         keyframes[1].value = offAxisVolume;
         keyframes[1].weightedMode = WeightedMode.Both;
         onAxisToOffAxisCurve.keys = keyframes;
+
+
     }
 
 

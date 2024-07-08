@@ -29,10 +29,10 @@ public class FieldOfViewEditor : Editor{
         Vector3 startAngleB = dS.Direction(dS.onAxisAngle / 2);
         Vector3 startAngleC = dS.DirectionVert((-dS.onAxisAngle) / 2);
         Vector3 startAngleD = dS.DirectionVert((dS.onAxisAngle) / 2);
-        Vector3 endAngleA = dS.Direction(-dS.offAxisAngle / 2);
-        Vector3 endAngleB = dS.Direction(dS.offAxisAngle / 2);
-        Vector3 endAngleC = dS.DirectionVert(-dS.offAxisAngle / 2);
-        Vector3 endAngleD = dS.DirectionVert(dS.offAxisAngle / 2);
+        Vector3 endAngleA = dS.Direction(-dS.onAxisAngle / 2);
+        Vector3 endAngleB = dS.Direction(dS.onAxisAngle / 2);
+        Vector3 endAngleC = dS.DirectionVert(-dS.onAxisAngle / 2);
+        Vector3 endAngleD = dS.DirectionVert(dS.onAxisAngle / 2);
 
         Handles.matrix = dS.transform.localToWorldMatrix;
 
@@ -65,8 +65,8 @@ public class FieldOfViewEditor : Editor{
             //Off Axis Arc
             Handles.color = dS.colorOffAxisFill;
             dS.colorOffAxisFill.a = dS.volume * dS.OnOffAxisFill;
-            Handles.DrawSolidArc(position, -Vector3.up, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
-            Handles.DrawSolidArc(position, Vector3.up, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, -Vector3.up, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, Vector3.up, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
         }    
 
         if (dS.viewVertical)
@@ -92,8 +92,8 @@ public class FieldOfViewEditor : Editor{
             //Vertical Off Axis Arc
             Handles.color = dS.colorOffAxisFill;
             dS.colorOffAxisFill.a = dS.volume * dS.OnOffAxisFill;
-            Handles.DrawSolidArc(position, -Vector3.left, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
-            Handles.DrawSolidArc(position, Vector3.left, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, -Vector3.left, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, Vector3.left, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
         }
 
         //Max Distance Horizontal Disc
@@ -250,10 +250,10 @@ public class FieldOfViewEditor : Editor{
         Vector3 startAngleB = dS.Direction(dS.onAxisAngle / 2);
         Vector3 startAngleC = dS.DirectionVert((-dS.onAxisAngle) / 2);
         Vector3 startAngleD = dS.DirectionVert((dS.onAxisAngle) / 2);
-        Vector3 endAngleA = dS.Direction(-dS.offAxisAngle / 2);
-        Vector3 endAngleB = dS.Direction(dS.offAxisAngle / 2);
-        Vector3 endAngleC = dS.DirectionVert(-dS.offAxisAngle / 2);
-        Vector3 endAngleD = dS.DirectionVert(dS.offAxisAngle / 2);
+        Vector3 endAngleA = dS.Direction(-dS.onAxisAngle / 2);
+        Vector3 endAngleB = dS.Direction(dS.onAxisAngle / 2);
+        Vector3 endAngleC = dS.DirectionVert(-dS.onAxisAngle / 2);
+        Vector3 endAngleD = dS.DirectionVert(dS.onAxisAngle / 2);
 
         Handles.matrix = dS.transform.localToWorldMatrix;
 
@@ -286,8 +286,8 @@ public class FieldOfViewEditor : Editor{
             //Off Axis Arc
             Handles.color = dS.colorOffAxisFill;
             dS.colorOffAxisFill.a = dS.volume * dS.OnOffAxisFill;
-            Handles.DrawSolidArc(position, -Vector3.up, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
-            Handles.DrawSolidArc(position, Vector3.up, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, -Vector3.up, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, Vector3.up, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
         }
 
         if (dS.viewVertical)
@@ -313,8 +313,8 @@ public class FieldOfViewEditor : Editor{
             //Vertical Off Axis Arc
             Handles.color = dS.colorOffAxisFill;
             dS.colorOffAxisFill.a = dS.volume * dS.OnOffAxisFill;
-            Handles.DrawSolidArc(position, -Vector3.left, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
-            Handles.DrawSolidArc(position, Vector3.left, -Vector3.forward, -dS.offAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, -Vector3.left, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
+            Handles.DrawSolidArc(position, Vector3.left, -Vector3.forward, -dS.onAxisAngle / 2 + 180, dS.maxDistance);
         }
 
         //Max Distance Horizontal Disc
