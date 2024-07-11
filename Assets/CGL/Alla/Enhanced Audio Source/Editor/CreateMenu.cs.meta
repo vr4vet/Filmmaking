@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5a3d7ccf602f448328bbc234fbbc28c2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211004
+  packageName: Enhanced Audio Source
+  packageVersion: 1.0
+  assetPath: Assets/Enhanced Audio Source/Editor/CreateMenu.cs
+  uploadId: 477619
