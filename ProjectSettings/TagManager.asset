@@ -23,8 +23,8 @@ TagManager:
   - Structure
   - Grab
   - DynamicPose
-  - 
-  - 
+  - UnseenByStudioCamera
+  - StudioCameraOnly
   - 
   - 
   - 
