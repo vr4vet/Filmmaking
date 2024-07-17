@@ -43,7 +43,7 @@ namespace HurricaneVR.Framework.Components
         [Tooltip("Furthest position the button can travel")]
         public Vector3 EndPosition;
 
-
+        public bool setToStartPosOnStart=true;
 
         [Header("SFX")]
         public AudioClip SFXButtonDown;
@@ -66,6 +66,7 @@ namespace HurricaneVR.Framework.Components
 
         protected virtual void Awake()
         {
+            if(setToStartPosOnStart)
             transform.localPosition = StartPosition;
             Rigidbody = GetComponent<Rigidbody>();
             _axis = Axis.GetVector();
@@ -189,6 +190,8 @@ namespace HurricaneVR.Framework.Components
 
             return 0f;
         }
+
+       
         protected virtual void OnButtonDown()
         {
             if (SFXButtonDown)

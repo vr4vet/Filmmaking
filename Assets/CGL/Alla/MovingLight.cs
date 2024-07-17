@@ -13,6 +13,6 @@ public class MovingLight : MonoBehaviour
     }
     public void SetOffeset(float offset)
     {
-        transform.rotation = Quaternion.Euler(startRotation + rotationAxis * (1 - offset));
+        transform.rotation = Quaternion.Euler(startRotation + rotationAxis * offset);
     }
 }
