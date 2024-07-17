@@ -3,6 +3,7 @@ using HurricaneVR.Framework.Core.ScriptableObjects;
 using HurricaneVR.Framework.Core.Utils;
 using HurricaneVR.Framework.Shared;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.Events;
 
 namespace HurricaneVR.Framework.Components
@@ -171,7 +172,23 @@ namespace HurricaneVR.Framework.Components
 
             return 0f;
         }
+        public float GetNormalizedDistance()
+        {
+            switch (Axis)
+            {
+                case HVRAxis.X:
+                case HVRAxis.NegX:
+                    return (transform.localPosition.x - StartPosition.x) / (EndPosition.x - StartPosition.x);
+                case HVRAxis.Y:
+                case HVRAxis.NegY:
+                    return (transform.localPosition.y - StartPosition.y) / (EndPosition.y- StartPosition.y);
+                case HVRAxis.Z:
+                case HVRAxis.NegZ:
+                    return (transform.localPosition.z - StartPosition.z)/(EndPosition.z-StartPosition.z);
+            }
 
+            return 0f;
+        }
         protected virtual void OnButtonDown()
         {
             if (SFXButtonDown)
