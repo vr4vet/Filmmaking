@@ -14,7 +14,7 @@ public class PyrotechnicsScreen : MonoBehaviour
     [SerializeField] private float timeForMaxBar;
 
     [SerializeField] private ParticleSystem explosion;
-    [SerializeField] private float maxExplosionRadius;
+    [SerializeField] private float maxForce;
     [SerializeField] private float maxParticles;
 
     private float currentFillAmount = 0;
@@ -64,8 +64,8 @@ public class PyrotechnicsScreen : MonoBehaviour
 
     public void Explode()
     {
-        var shape = explosion.shape;
-        shape.radius = currentFillAmount * maxExplosionRadius;
+        var main = explosion.main;
+        main.startSpeed = currentFillAmount * maxForce;
         var emission = explosion.emission;
         emission.rateOverTime = currentFillAmount * maxParticles;
         explosion.Play();

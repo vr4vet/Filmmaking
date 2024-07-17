@@ -453,6 +453,7 @@ MonoBehaviour:
   ResetThreshold: 0.22722925
   StartPosition: {x: 0.07944, y: 0.9437, z: 0.19181}
   EndPosition: {x: -0.0833, y: 0.9436, z: 0.1924}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -464,6 +465,103 @@ MonoBehaviour:
   IsPressed: 0
   InvokeButtonDown: 0
   UpdateSpring: 0
+--- !u!1 &2006271180445488336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7531590048949246208}
+  - component: {fileID: 8297135782853901224}
+  - component: {fileID: 745393248114907111}
+  - component: {fileID: 7127496772511411779}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7531590048949246208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006271180445488336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.02876299, y: 0.028762985, z: 0.02876299}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6177311498812747375}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8297135782853901224
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006271180445488336}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &745393248114907111
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006271180445488336}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a151dcba28ff82e4eade4044a2c106e2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7127496772511411779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006271180445488336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2929613113303963913
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +886,7 @@ MonoBehaviour:
   ResetThreshold: 0.22722925
   StartPosition: {x: 0.0852, y: 0.9618, z: 0.0959}
   EndPosition: {x: -0.0834, y: 0.9617, z: 0.0965}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -1006,6 +1105,7 @@ MonoBehaviour:
   ResetThreshold: 0.2287425
   StartPosition: {x: 0.3025, y: 0.9438, z: 0.1908}
   EndPosition: {x: 0.3025, y: 0.9738, z: -0.0323}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -1169,6 +1269,7 @@ Transform:
   - {fileID: 5742031204959364219}
   - {fileID: 4662860963306575524}
   - {fileID: 6248535817734688498}
+  - {fileID: 6177311498812747375}
   m_Father: {fileID: 3581099154665302443}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2543,6 +2644,7 @@ MonoBehaviour:
   ResetThreshold: 0.22632395
   StartPosition: {x: 0.1645, y: 0.9436, z: 0.192}
   EndPosition: {x: 0.1645, y: 0.9738, z: -0.0323}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -2585,6 +2687,7 @@ Transform:
   - {fileID: 3906916418775297530}
   - {fileID: 3906916416741452197}
   - {fileID: 3581099154114584012}
+  - {fileID: 4654230363468365972}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2906,6 +3009,7 @@ MonoBehaviour:
   ResetThreshold: 0.22722925
   StartPosition: {x: 0.1303, y: 0.9435, z: 0.1929}
   EndPosition: {x: 0.1303, y: 0.9738, z: -0.0323}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -3124,6 +3228,7 @@ MonoBehaviour:
   ResetThreshold: 0.22874251
   StartPosition: {x: 0.3366, y: 0.9433, z: 0.1944}
   EndPosition: {x: 0.3366, y: 0.9738, z: -0.0323}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -3342,6 +3447,7 @@ MonoBehaviour:
   ResetThreshold: 0.2286434
   StartPosition: {x: 0.2321, y: 0.9433, z: 0.1943}
   EndPosition: {x: 0.2321, y: 0.9738, z: -0.0323}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -3560,6 +3666,7 @@ MonoBehaviour:
   ResetThreshold: 0.22632395
   StartPosition: {x: 0.1987, y: 0.9436, z: 0.192}
   EndPosition: {x: 0.1987, y: 0.9738, z: -0.0323}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -4025,6 +4132,7 @@ MonoBehaviour:
   ResetThreshold: 0.0062999725
   StartPosition: {x: 0.222, y: 0.9844, z: -0.1649}
   EndPosition: {x: 0.222, y: 0.9644, z: -0.1649}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -4106,6 +4214,7 @@ MonoBehaviour:
   ResetThreshold: 0.008399963
   StartPosition: {x: 0.1595, y: 0.9844, z: -0.1649}
   EndPosition: {x: 0.1595, y: 0.9653, z: -0.1649}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -4304,6 +4413,7 @@ MonoBehaviour:
   ResetThreshold: 0.004099965
   StartPosition: {x: 0.2927, y: 0.9844, z: -0.1649}
   EndPosition: {x: 0.2927, y: 0.9665, z: -0.1649}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -4879,6 +4989,7 @@ MonoBehaviour:
   ResetThreshold: 0.22561686
   StartPosition: {x: 0.2677, y: 0.9437, z: 0.1913}
   EndPosition: {x: 0.2677, y: 0.9738, z: -0.0323}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -4887,6 +4998,124 @@ MonoBehaviour:
   ButtonUp:
     m_PersistentCalls:
       m_Calls: []
+  IsPressed: 0
+  InvokeButtonDown: 0
+  UpdateSpring: 0
+--- !u!1 &3869599937742267541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6177311498812747375}
+  - component: {fileID: 8652758808621429009}
+  - component: {fileID: 5727957492377263467}
+  m_Layer: 0
+  m_Name: Pyrotechnics Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6177311498812747375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869599937742267541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.2077, y: 0.9844, z: -0.1895}
+  m_LocalScale: {x: 3.242149, y: 1, z: 2.0176594}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7531590048949246208}
+  m_Father: {fileID: 3581099154114584012}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &8652758808621429009
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869599937742267541}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5727957492377263467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869599937742267541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb388898ff2f814f84c5cfa8b56235f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Axis: 1
+  ConnectedBody: {fileID: 0}
+  Spring: 500
+  Damper: 0
+  DownThreshold: 0.01699996
+  ResetThreshold: 0.004999995
+  StartPosition: {x: -0.2077, y: 0.9844, z: -0.1895}
+  EndPosition: {x: -0.2077, y: 0.9647, z: -0.1895}
+  setToStartPosOnStart: 1
+  SFXButtonDown: {fileID: 0}
+  SFXButtonUp: {fileID: 0}
+  ButtonDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2102410862010095314}
+        m_TargetAssemblyTypeName: PyrotechnicsScreen, Assembly-CSharp
+        m_MethodName: ActivateScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ButtonUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2102410862010095314}
+        m_TargetAssemblyTypeName: PyrotechnicsScreen, Assembly-CSharp
+        m_MethodName: Explode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2102410862010095314}
+        m_TargetAssemblyTypeName: PyrotechnicsScreen, Assembly-CSharp
+        m_MethodName: DeactivateScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   IsPressed: 0
   InvokeButtonDown: 0
   UpdateSpring: 0
@@ -5214,6 +5443,7 @@ MonoBehaviour:
   ResetThreshold: 0.22722925
   StartPosition: {x: 0.0788, y: 0.9527, z: 0.144}
   EndPosition: {x: -0.0832, y: 0.9526, z: 0.1446}
+  setToStartPosOnStart: 1
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -5225,6 +5455,82 @@ MonoBehaviour:
   IsPressed: 0
   InvokeButtonDown: 0
   UpdateSpring: 0
+--- !u!1 &5566411861225619468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7531229959576451434}
+  - component: {fileID: 5560177142021865903}
+  - component: {fileID: 348620377210825659}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7531229959576451434
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566411861225619468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4654230363468365972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5560177142021865903
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566411861225619468}
+  m_CullTransparentMesh: 1
+--- !u!114 &348620377210825659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566411861225619468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e67049af772c3c34dbea1e2fd45ac570, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.469
+  m_FillClockwise: 1
+  m_FillOrigin: 1
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &6011297566594170369
 GameObject:
   m_ObjectHideFlags: 0
@@ -5336,6 +5642,127 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentGrabbable: {fileID: 0}
+--- !u!1 &6315747088002163720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4654230363468365972}
+  - component: {fileID: 6542436882322701083}
+  - component: {fileID: 1838158272881822385}
+  - component: {fileID: 5901669389652824782}
+  - component: {fileID: 2102410862010095314}
+  m_Layer: 0
+  m_Name: Soundboard Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4654230363468365972
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315747088002163720}
+  m_LocalRotation: {x: -0.59402776, y: -0, z: -0, w: 0.8044446}
+  m_LocalPosition: {x: 0, y: 0, z: -0.14247}
+  m_LocalScale: {x: 0.0001, y: 0.0001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7531229959576451434}
+  m_Father: {fileID: 3581099154665302443}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -72.887, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.00027, y: 1.01254}
+  m_SizeDelta: {x: 2016.0216, y: 1540.6094}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &6542436882322701083
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315747088002163720}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1838158272881822385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315747088002163720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!114 &5901669389652824782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315747088002163720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2102410862010095314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315747088002163720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdf1773779eb4744831a0306dd0664f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barImage: {fileID: 348620377210825659}
+  minBarColor: {r: 0, g: 1, b: 0.045587063, a: 1}
+  maxBarColor: {r: 1, g: 0, b: 0, a: 1}
+  timeForMaxBar: 2
+  explosion: {fileID: 0}
+  maxForce: 5
+  maxParticles: 2000
 --- !u!1 &6465526831880200914
 GameObject:
   m_ObjectHideFlags: 0
