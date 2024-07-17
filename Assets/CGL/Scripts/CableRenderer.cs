@@ -11,20 +11,6 @@ public class CableRenderer : MonoBehaviour
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-
-        /*// Set the color of the line to black
-        lineRenderer.startColor = Color.black;
-        lineRenderer.endColor = Color.black;
-
-        // Set the width of the line
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
-
-        // If you have a large number of points, set the material to null to use a default material.
-        // Otherwise, you can set a specific material if needed.
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-*/
-        // Update the line with the points
         UpdateLine();
     }
 

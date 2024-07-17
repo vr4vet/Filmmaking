@@ -2,6 +2,7 @@ using HurricaneVR.Framework.Core.Grabbers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CableUnpluger : MonoBehaviour
 {
@@ -14,8 +15,16 @@ public class CableUnpluger : MonoBehaviour
     [SerializeField] private Rigidbody cableHeadRb;
     [SerializeField] private ParticleSystem sparksParticles;
 
+    [SerializeField] private List<Light> lights  =  new List<Light>();
+    private float[] intencities;
+
     private void Start()
     {
+        intencities = new float[lights.Count];
+        for (int i = 0; i < lights.Count; i++)
+        {
+            intencities[i] = lights[i].intensity;
+        }
         Vector3 localUpBackDirection = new Vector3(0, 1, -1).normalized;
         Vector3 worldDirection = cableHeadRb.transform.TransformDirection(localUpBackDirection);
     }
@@ -30,19 +39,30 @@ public class CableUnpluger : MonoBehaviour
         socket.Detach();
         sparksParticles.Play();
         AddImpulseForce();
+        Debug.Log("DO ONLY ONCE");
     }
 
     void AddImpulseForce()
     {
-        // Define the local up-back direction
         Vector3 localUpBackDirection = cableHeadRb.transform.up + -cableHeadRb.transform.right;
-
-        // Add impulse force to the Rigidbody in the transformed direction
         cableHeadRb.AddForce(localUpBackDirection, ForceMode.Impulse);
     }
 
-    private void Update()
+    public void ShutDownLight()
     {
-        //Debug.DrawRay(transform.position, worldDirection, Color.red);
+        foreach (var light in lights)
+        {
+            light.intensity = 0;
+        }
     }
+
+    public void EnableLight()
+    {
+
+        for (int i = 0; i < lights.Count; i++)
+        {
+            lights[i].intensity = intencities[i];
+        }
+    }
+    
 }
