@@ -8,6 +8,7 @@ TagManager:
   - OcupationName
   - Title
   - projectile
+  - stamp
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Structure
   - Grab
   - DynamicPose
-  - 
+  - Marker
   - 
   - 
   - 
