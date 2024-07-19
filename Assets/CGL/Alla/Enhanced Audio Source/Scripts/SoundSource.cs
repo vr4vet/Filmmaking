@@ -11,7 +11,7 @@ using FMODUnity;
 [ExecuteInEditMode]
 public class SoundSource : MonoBehaviour
 {
-    public AudioClip audioClip;
+    
     [Tooltip("Set whether a sound should play through an Audio Mixer first or directly to the Audio Listener")]
     public AudioMixerGroup output;
     [Tooltip("Add the Audio Listener here to enable directional audio")]
@@ -74,7 +74,7 @@ public class SoundSource : MonoBehaviour
     [Tooltip("")]
     [SerializeField] public AnimationCurve distanceToVolumeCurve;
     
-    public StudioEventEmitter audioSource;
+    public EventInstance audioSource;
     [HideInInspector]
     public AudioLowPassFilter lowPassFilter;
     [Tooltip("Angle in degrees between the player and the Sound Source")]
@@ -131,7 +131,7 @@ public class SoundSource : MonoBehaviour
     public AudioLevelUI audioLevelUI;
     private void Awake(){
 
-        audioSource = GetComponentInChildren<StudioEventEmitter>();
+        
         
         lowPassFilter = GetComponentInChildren<AudioLowPassFilter>();
     }
@@ -167,7 +167,7 @@ public class SoundSource : MonoBehaviour
 
             //angleToFreq = angleToPlayer * lpfFreqMulti;
             float volume = evaluatedVolume * Mathf.Clamp(1 - (angel / listener.angel), 0, 1) * distanceToVolumeCurve.Evaluate(Mathf.Clamp(1 - (distance / listener.distance), 0, 1));
-            audioSource.SetParameter("Axis(Off-On)", volume);
+            audioSource.setParameterByName("Axis(Off-On)", volume);
             audioLevelUI.SetValue(volume);
         }
    
