@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766739804483563405}
   m_LocalRotation: {x: 0.06609182, y: -0.7027696, z: -0.065991804, w: 0.70526016}
-  m_LocalPosition: {x: -0.0833, y: 0.9436, z: 0.1924}
+  m_LocalPosition: {x: -0.0378, y: 0.9436, z: 0.1922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fb388898ff2f814f84c5cfa8b56235f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: 2
+  Axis: 0
   ConnectedBody: {fileID: 0}
   Spring: 0
   Damper: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
   ResetThreshold: 0.22722925
   StartPosition: {x: 0.07944, y: 0.9437, z: 0.19181}
   EndPosition: {x: -0.0833, y: 0.9436, z: 0.1924}
-  setToStartPosOnStart: 1
+  setToStartPosOnStart: 0
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -706,7 +706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3116257484057822499}
   m_LocalRotation: {x: 0.06609182, y: -0.7027696, z: -0.065991804, w: 0.70526016}
-  m_LocalPosition: {x: 0.0852, y: 0.9618, z: 0.0959}
+  m_LocalPosition: {x: 0.0501, y: 0.9618, z: 0.096}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -878,15 +878,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fb388898ff2f814f84c5cfa8b56235f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: 2
+  Axis: 0
   ConnectedBody: {fileID: 0}
   Spring: 0
   Damper: 0
   DownThreshold: 0.22722925
   ResetThreshold: 0.22722925
-  StartPosition: {x: 0.0852, y: 0.9618, z: 0.0959}
+  StartPosition: {x: 0.0789, y: 0.9618, z: 0.0959}
   EndPosition: {x: -0.0834, y: 0.9617, z: 0.0965}
-  setToStartPosOnStart: 1
+  setToStartPosOnStart: 0
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:
@@ -5263,7 +5263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4541923014757823853}
   m_LocalRotation: {x: 0.06609182, y: -0.7027696, z: -0.065991804, w: 0.70526016}
-  m_LocalPosition: {x: 0.0788, y: 0.9527, z: 0.144}
+  m_LocalPosition: {x: -0.0158, y: 0.9527, z: 0.1443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5435,7 +5435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fb388898ff2f814f84c5cfa8b56235f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: 2
+  Axis: 0
   ConnectedBody: {fileID: 0}
   Spring: 0
   Damper: 0
@@ -5443,7 +5443,7 @@ MonoBehaviour:
   ResetThreshold: 0.22722925
   StartPosition: {x: 0.0788, y: 0.9527, z: 0.144}
   EndPosition: {x: -0.0832, y: 0.9526, z: 0.1446}
-  setToStartPosOnStart: 1
+  setToStartPosOnStart: 0
   SFXButtonDown: {fileID: 0}
   SFXButtonUp: {fileID: 0}
   ButtonDown:

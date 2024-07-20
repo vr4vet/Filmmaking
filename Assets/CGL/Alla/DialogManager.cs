@@ -10,7 +10,7 @@ using static UnityEngine.ParticleSystem;
 
 public class DialogManager : MonoBehaviour
 {
-
+    public static DialogManager Instance;
     public enum speaker
     {
         knight, princess
@@ -25,9 +25,19 @@ public class DialogManager : MonoBehaviour
     public List<Dialog> dialogsEvents;
     public SoundSource knightSoundSource;
     public SoundSource princessSoundSource;
+    public speaker currentSpeaker;
+
+
     int i = -1;
     bool playing;
     EventInstance lastInstance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;    
+        else Destroy(this);
+    }
     private void Update()
     {
         FMOD.Studio.PLAYBACK_STATE state;
@@ -38,24 +48,27 @@ public class DialogManager : MonoBehaviour
     }
     public void PlayNext()
     {
-        print("next");
+        print("next dialog");
         i++;
         lastInstance.release();
         Dialog dialog = dialogsEvents[i];
         lastInstance = FMODUnity.RuntimeManager.CreateInstance(dialog.dialogeEvent);
+        currentSpeaker = dialog.speaker;
         if (dialog.speaker == speaker.knight)
         {
-
             knightSoundSource.audioSource = lastInstance;
-
         }
         else
         {
             princessSoundSource.audioSource = lastInstance;
-
         }
         lastInstance.start();
         playing = true;
+    }
+
+    public float GetAccuracyFromCurrentSpeaker()
+    {
+        return (currentSpeaker == speaker.princess) ? princessSoundSource.lastAudioLevel:knightSoundSource.lastAudioLevel;
     }
 
 }

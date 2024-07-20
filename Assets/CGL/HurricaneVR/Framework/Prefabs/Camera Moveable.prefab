@@ -5527,7 +5527,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6f03d43f876fafe4e8d4f2b99a113828, type: 2}
+  - {fileID: 2100000, guid: 9c14f0b5f0464b54192f6467a53fe773, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6673,7 +6673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c71292499e060dc4caf482a8dc0813c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraLight: {fileID: 2100000, guid: 6f03d43f876fafe4e8d4f2b99a113828, type: 2}
+  cameraLight: {fileID: 2100000, guid: 9c14f0b5f0464b54192f6467a53fe773, type: 2}
 --- !u!65 &7195982888211163270
 BoxCollider:
   m_ObjectHideFlags: 0
