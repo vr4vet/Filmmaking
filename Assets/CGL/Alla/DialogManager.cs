@@ -44,12 +44,13 @@ public class DialogManager : MonoBehaviour
         lastInstance.getPlaybackState(out state);
         if (state==FMOD.Studio.PLAYBACK_STATE.STOPPED)
             playing = false;
-        if (!playing) { PlayNext(); }
+        if (!playing&& i < dialogsEvents.Count) { PlayNext(); }
     }
     public void PlayNext()
     {
         print("next dialog");
         i++;
+        if (i >= dialogsEvents.Count) return;
         lastInstance.release();
         Dialog dialog = dialogsEvents[i];
         lastInstance = FMODUnity.RuntimeManager.CreateInstance(dialog.dialogeEvent);

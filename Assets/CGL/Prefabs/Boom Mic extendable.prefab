@@ -126,6 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angel: 90
   distance: 10
+  scoreSampleFrequncy: 4
+  objective: {fileID: 11400000, guid: d630fd8cfcfbe444a988cdbb9ae9f803, type: 2}
 --- !u!114 &203442803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +166,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412579003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -178,7 +180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0391, y: -0.00866}
+  m_AnchoredPosition: {x: -0.0027, y: -0.0087}
   m_SizeDelta: {x: -0.13049, y: -0.01732}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412579005
@@ -1587,7 +1589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1842551220
 RectTransform:
   m_ObjectHideFlags: 0
