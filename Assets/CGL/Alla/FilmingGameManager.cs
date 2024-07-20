@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class FilmingGameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static FilmingGameManager instance;
+    private void Awake()
     {
-        
+        if (instance == null)
+            instance = this;
+        else 
+            Destroy(this);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void StartFilming()
     {
-        
+
     }
 }
