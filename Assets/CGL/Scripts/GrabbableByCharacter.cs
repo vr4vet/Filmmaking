@@ -1,18 +1,27 @@
+using HurricaneVR.Framework.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SocketType
+{
+    Head,
+    Hand
+}
+
 public class GrabbableByCharacter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public SocketType forWhatSocket;
+    public Rigidbody rb;
+    public HVRGrabbable hvrGrabbable;
+    public GameObject parentTransform;
 
-    // Update is called once per frame
-    void Update()
+    public bool canSnap;
+
+    public bool isHeld;
+
+    public void SetCanSnap(bool value)
     {
-        
+        canSnap = value;
     }
 }
