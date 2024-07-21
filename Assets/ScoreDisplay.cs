@@ -22,7 +22,8 @@ public class ScoreDisplay : MonoBehaviour
     {
         foreach (var item in PointManager.instance.GetUniqueObjectives())
         {
-            GameObject tmp = Instantiate(Objective.gameObject);
+            GameObject tmp = Instantiate(Objective.gameObject,Objective.transform.parent);
+            
             tmp.GetComponent<TextMeshProUGUI>().text = item.Key.displayTitle + " : " + item.Value.Value;
             tmp.SetActive(true);
         }

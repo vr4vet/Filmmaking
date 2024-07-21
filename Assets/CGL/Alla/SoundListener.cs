@@ -14,6 +14,7 @@ public class SoundListener : MonoBehaviour
     bool start;
     float lastsample=0;
     float accscore;
+    int numberOfSamples;
     private void Start()
     {
         FilmingGameManager.instance.OnStartFilming += () => { start = true; lastsample = Time.time; };
@@ -25,9 +26,10 @@ public class SoundListener : MonoBehaviour
         
         if(Time.time- lastsample > scoreSampleFrequncy)
         {
-            objective.points = (int)accscore;
+            objective.points = (int)(accscore/scoreSampleFrequncy);
             PointManager.instance.SolveObjective(objective, (int)accscore);
             accscore = 0;
+            lastsample = Time.time;
         }
         accscore += DialogManager.Instance.GetAccuracyFromCurrentSpeaker();
 
