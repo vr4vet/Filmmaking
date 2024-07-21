@@ -16,12 +16,36 @@ public class GrabbableByCharacter : MonoBehaviour
     public HVRGrabbable hvrGrabbable;
     public GameObject parentTransform;
 
+    private CharacterGrabber currentCharacter;
+
+    public Collider characterCollider;
+    public Collider propCollider;
+
     public bool canSnap;
 
-    public bool isHeld;
-
-    public void SetCanSnap(bool value)
+    public void SetCurrentCharacter(CharacterGrabber cb)
     {
-        canSnap = value;
+        currentCharacter = cb;
+    }
+
+    public void ResetCanSnap()
+    {
+        StartCoroutine(CanSnap());
+        if (currentCharacter == null) return;
+        if (forWhatSocket == SocketType.Head)
+        {
+            currentCharacter.ResetCurrentHead();
+        }
+        else if (forWhatSocket == SocketType.Hand)
+        {
+            currentCharacter.ResetCurrentHand();
+        }
+        currentCharacter = null;
+    }
+
+    private IEnumerator CanSnap()
+    {
+        yield return new WaitForSeconds(3);
+        canSnap = true;
     }
 }
