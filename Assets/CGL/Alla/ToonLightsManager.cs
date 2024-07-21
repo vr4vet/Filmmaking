@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class ToonLightsManager : MonoBehaviour
 {
     public Light[] lights;
-
+    public bool lightsEnabled=true;
     private void OnEnable()
     {
         RenderPipelineManager.beginCameraRendering += OnBeginCameraRendering;
@@ -33,7 +33,7 @@ public class ToonLightsManager : MonoBehaviour
             lightPositions[i] = new Vector4(lights[i].transform.position.x, lights[i].transform.position.y, lights[i].transform.position.z, 1.0f); // Use w component for shadow attenuation if needed
             lightColors[i] = lights[i].color ;
             lightRanges[i] = lights[i].range;
-            lightStrengths[i] = lights[i].enabled? lights[i].intensity:0;
+            lightStrengths[i] = (lights[i].enabled? lights[i].intensity:0 )* (lightsEnabled?1:0);
             lightDirections[i] = lights[i].transform.forward;
             lightAngels[i] = lights[i].spotAngle;
         }
