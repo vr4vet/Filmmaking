@@ -6,7 +6,7 @@ using DG.Tweening;
 public class FilmingGameManager : MonoBehaviour
 {
     public static FilmingGameManager instance;
-    public GameObject player;
+    public CharacterController player;
     public Transform finalRoomPlayerPoint;
     public UnityAction OnStartFilming;
     public UnityAction OnStopFilming;
@@ -30,7 +30,8 @@ public class FilmingGameManager : MonoBehaviour
     public void StopFilming()
     {
         OnStopFilming.Invoke();
-        player.transform.position = finalRoomPlayerPoint.position;
+        player.Move(finalRoomPlayerPoint.position);
+        
         player.transform.forward = finalRoomPlayerPoint.forward;
         playerFade.DOColor(new Color(playerFade.color.r, playerFade.color.g, playerFade.color.b, 1), 3).OnComplete(() => { playerFade.DOColor(new Color(playerFade.color.r, playerFade.color.g, playerFade.color.b, 0), 3); });
     }
