@@ -15,14 +15,15 @@ public class ScoreDisplay : MonoBehaviour
     private void Start()
     {
 
-        DisplayScore();
+        FilmingGameManager.instance.OnStopFilming += () => { DisplayScore(); };
+     
     }
     public void DisplayScore()
     {
         foreach (var item in PointManager.instance.GetUniqueObjectives())
         {
             GameObject tmp = Instantiate(Objective.gameObject);
-            tmp.GetComponent<TextMeshProUGUI>().text = item.displayTitle + " : " + item.points;
+            tmp.GetComponent<TextMeshProUGUI>().text = item.Key.displayTitle + " : " + item.Value.Value;
             tmp.SetActive(true);
         }
     }

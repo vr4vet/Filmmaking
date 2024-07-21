@@ -40,11 +40,12 @@ public class DialogManager : MonoBehaviour
     }
     private void Update()
     {
+        if (!FilmingGameManager.instance.startedFilming) return;
         FMOD.Studio.PLAYBACK_STATE state;
         lastInstance.getPlaybackState(out state);
         if (state==FMOD.Studio.PLAYBACK_STATE.STOPPED)
             playing = false;
-        if (!playing&& i < dialogsEvents.Count) { PlayNext(); }
+        if (!playing && i < dialogsEvents.Count) { PlayNext(); }
     }
     public void PlayNext()
     {
@@ -58,10 +59,14 @@ public class DialogManager : MonoBehaviour
         if (dialog.speaker == speaker.knight)
         {
             knightSoundSource.audioSource = lastInstance;
+            knightSoundSource.speaking = true;
+            princessSoundSource.speaking = false;
         }
         else
         {
             princessSoundSource.audioSource = lastInstance;
+            knightSoundSource.speaking = false;
+            princessSoundSource.speaking = true;
         }
         lastInstance.start();
         playing = true;

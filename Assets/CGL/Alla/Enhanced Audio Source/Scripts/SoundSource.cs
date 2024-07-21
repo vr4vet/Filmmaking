@@ -130,6 +130,7 @@ public class SoundSource : MonoBehaviour
 
     public AudioLevelUI audioLevelUI;
     public float lastAudioLevel;
+    public bool speaking;
     private void Awake(){
 
         
@@ -163,7 +164,8 @@ public class SoundSource : MonoBehaviour
             angleToPlayer = Mathf.Abs(-newAngle);
         }
 
-        if (angleToPlayer >= 0 && angleToPlayer <= 180){
+        if (angleToPlayer >= 0 && angleToPlayer <= 180 && speaking)
+        {
 
 
             //angleToFreq = angleToPlayer * lpfFreqMulti;

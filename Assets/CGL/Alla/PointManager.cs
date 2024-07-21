@@ -6,7 +6,7 @@ using UnityEngine;
 public class PointManager : MonoBehaviour
 {
     public List<PointObjectiveSO> objectives;
-    public List<PointObjectiveSO> solvedObjectives;
+    public Dictionary<PointObjectiveSO,int?> solvedObjectives = new Dictionary<PointObjectiveSO, int?>();
     public static PointManager instance;
     private void Awake()
     {
@@ -17,39 +17,34 @@ public class PointManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    public void SolveObjective(PointObjectiveSO objective)
+    public void SolveObjective(PointObjectiveSO objective,int points)
     {
-        if (solvedObjectives.Contains(objective)&&objective.oneTime) return;
-        solvedObjectives.Add(objective);
+        solvedObjectives.TryGetValue(objective, out var result);
+        if (result.HasValue)
+            if (objective.oneTime)
+                return;
+            else
+                solvedObjectives[objective] = solvedObjectives[objective].Value + points;
+        else
+        solvedObjectives.Add(objective,points);
     }
     public void UnSolveObjective(PointObjectiveSO objective)
     {
-        if (!solvedObjectives.Contains(objective)) return;
-        solvedObjectives.Remove(objective);
+        //if (!solvedObjectives.Contains(objective)) return;
+        //solvedObjectives.Remove(objective);
     }
-    public List<PointObjectiveSO> GetUniqueObjectives() 
+    public Dictionary<PointObjectiveSO,int?> GetUniqueObjectives() 
     {
-        List<PointObjectiveSO> returnList = new List<PointObjectiveSO>();   
-        foreach (var item in solvedObjectives)
-        {
-            if (!returnList.Contains(item))
-            {
-                returnList.Add(item);
-            }
-            else
-            {
-                returnList[returnList.IndexOf(item)].points+=item.points;
-            }
-        }
+        return solvedObjectives;
     
-    return returnList;
+
     }
-    public int CalculatePoints()
+    public int CalculateTotalPoints()
     {
         int points = 0;
         foreach (var objective in solvedObjectives)
         {
-            points += objective.points;
+            points += objective.Value.Value;
         }
 
         return points;

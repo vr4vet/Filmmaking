@@ -26,7 +26,7 @@ public class SoundListener : MonoBehaviour
         if(Time.time- lastsample > scoreSampleFrequncy)
         {
             objective.points = (int)accscore;
-            PointManager.instance.SolveObjective(objective);
+            PointManager.instance.SolveObjective(objective, (int)accscore);
             accscore = 0;
         }
         accscore += DialogManager.Instance.GetAccuracyFromCurrentSpeaker();
