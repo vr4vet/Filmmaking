@@ -18,9 +18,6 @@ public class GrabbableByCharacter : MonoBehaviour
 
     private CharacterGrabber currentCharacter;
 
-    public Collider characterCollider;
-    public Collider propCollider;
-
     public bool canSnap;
 
     public void SetCurrentCharacter(CharacterGrabber cb)
