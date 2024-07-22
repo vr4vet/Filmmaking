@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2555553272424284043}
   - component: {fileID: 2203516773602059073}
   - component: {fileID: 2987678085204622369}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: mic_holder_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,8 +111,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355073000945120403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 0.22218, y: 0.0058824993, z: 0.22218}
+  m_LocalPosition: {x: 0, y: -0.489, z: 0}
+  m_LocalScale: {x: 0.3085858, y: 0.022180468, z: 0.3085858}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5336358187603562333}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 6745904400080457193}
   - component: {fileID: 2267636432338627027}
   - component: {fileID: 3626710553954376878}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: mic_holder_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8417878456103719349}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mic_holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +731,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8895981771321484656}
-  m_LocalRotation: {x: -0, y: -0.85142523, z: -0, w: 0.52447605}
+  m_LocalRotation: {x: 0, y: -0.851425, z: 0, w: 0.5244764}
   m_LocalPosition: {x: -3.524, y: 0.71, z: 6.296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -758,7 +758,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &8535634605680616071
 MonoBehaviour:
@@ -802,7 +802,7 @@ MonoBehaviour:
   HandGrabbedClip: {fileID: 0}
   SocketGrabPoints: []
   Rigidbody: {fileID: 0}
-  AutoApplyLayer: 1
+  AutoApplyLayer: 0
   RequireOverlapClearance: 0
   OverlapTimeout: 5
   FinalJointMaxAngle: 3
