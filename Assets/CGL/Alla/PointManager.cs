@@ -27,6 +27,7 @@ public class PointManager : MonoBehaviour
                 solvedObjectives[objective] = solvedObjectives[objective].Value + points;
         else
         solvedObjectives.Add(objective,points);
+        print(objective.displayTitle + ": " + points);
     }
     public void UnSolveObjective(PointObjectiveSO objective)
     {

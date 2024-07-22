@@ -9,6 +9,8 @@ TagManager:
   - Title
   - projectile
   - stamp
+  - Clapper
+  - BoomMic
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - CamIntersect
   - 
   - Hand
   - 

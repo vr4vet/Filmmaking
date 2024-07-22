@@ -574,8 +574,8 @@ namespace HurricaneVR.Framework.Core.Grabbers
             {
                 Vector3 line = Vector3.Project(transform.position - grabbable.transform.position, grabbable.transform.right);
                 Debug.DrawLine(grabbable.transform.position, grabbable.transform.position + line, Color.red, 10);
-                line = transform.position - (grabbable.transform.position + line);
-                Debug.DrawLine(grabbable.transform.position, grabbable.transform.position + line, Color.green, 10);
+                //line = transform.position - (grabbable.transform.position + line);
+                //Debug.DrawLine(grabbable.transform.position, grabbable.transform.position + line, Color.green, 10);   
 
 
                 grabbable.transform.position = grabbable.transform.position + line;

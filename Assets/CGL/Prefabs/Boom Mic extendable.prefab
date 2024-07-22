@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 193743731}
   - component: {fileID: 193743733}
   - component: {fileID: 193743732}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 203442802}
   - component: {fileID: 203442804}
   - component: {fileID: 203442803}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Mic Hearing Point
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412579004}
   - component: {fileID: 412579005}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Audio Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 441776849}
   - component: {fileID: 441776851}
   - component: {fileID: 441776850}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Level Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 730573447}
   - component: {fileID: 730573449}
   - component: {fileID: 730573448}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Speaking Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 798821524}
   - component: {fileID: 798821526}
   - component: {fileID: 798821525}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Text Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 878543454}
   - component: {fileID: 878543456}
   - component: {fileID: 878543455}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 921180150}
   - component: {fileID: 921180149}
   - component: {fileID: 921180148}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Screen Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 1171007187}
   - component: {fileID: 1171007189}
   - component: {fileID: 1171007188}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 1196057432}
   - component: {fileID: 1196057434}
   - component: {fileID: 1196057433}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Head Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -885,7 +885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222984954}
   - component: {fileID: 1222984955}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Levels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 1222986777}
   - component: {fileID: 1222986779}
   - component: {fileID: 1222986778}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Head Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,7 +1010,7 @@ GameObject:
   - component: {fileID: 1342200930}
   - component: {fileID: 1342200932}
   - component: {fileID: 1342200931}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 1435330899}
   - component: {fileID: 1435330901}
   - component: {fileID: 1435330900}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Text Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1221,7 +1221,7 @@ GameObject:
   - component: {fileID: 1700675061}
   - component: {fileID: 1700675063}
   - component: {fileID: 1700675062}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1297,7 +1297,7 @@ GameObject:
   - component: {fileID: 1729806365}
   - component: {fileID: 1729806367}
   - component: {fileID: 1729806366}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Speaking Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ GameObject:
   - component: {fileID: 1740222813}
   - component: {fileID: 1740222815}
   - component: {fileID: 1740222814}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Level Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1449,7 +1449,7 @@ GameObject:
   - component: {fileID: 1812518703}
   - component: {fileID: 1812518705}
   - component: {fileID: 1812518704}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,7 +1583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1842551220}
   - component: {fileID: 1842551221}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Audio Level 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1935931858}
   - component: {fileID: 1935931859}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Levels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1717,7 +1717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939640771}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 1989960834}
   - component: {fileID: 1989960836}
   - component: {fileID: 1989960835}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 2060304490}
   - component: {fileID: 2060304492}
   - component: {fileID: 2060304491}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1906,7 +1906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2134224480}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1945,7 +1945,7 @@ GameObject:
   - component: {fileID: 2340048437965766359}
   - component: {fileID: 6991478684323946864}
   - component: {fileID: 7620105516469821006}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: pCylinder12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2033,9 +2033,10 @@ GameObject:
   - component: {fileID: 170659732532178026}
   - component: {fileID: 170659731768478336}
   - component: {fileID: 4146298696543648527}
+  - component: {fileID: 4803644691682570137}
   m_Layer: 10
   m_Name: Boom Mic extendable
-  m_TagString: Untagged
+  m_TagString: BoomMic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,7 +2102,7 @@ MonoBehaviour:
   HandGrabbedClip: {fileID: 0}
   SocketGrabPoints: []
   Rigidbody: {fileID: 0}
-  AutoApplyLayer: 1
+  AutoApplyLayer: 0
   RequireOverlapClearance: 0
   OverlapTimeout: 5
   FinalJointMaxAngle: 3
@@ -2139,6 +2140,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ExtenadableMic, Assembly-CSharp
         m_MethodName: OnGrabe
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 170659732532178030}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2324,6 +2337,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79f4a1f27f7d134cb8ecdcbd35a5259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &4803644691682570137
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170659732532178017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.010518568
+  m_Height: 0.53722084
+  m_Direction: 1
+  m_Center: {x: -0.000000007601326, y: 0.24014717, z: 0.000000117257535}
 --- !u!1 &1053604606595907219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,7 +2360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420232666326852649}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: mic part 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2366,7 +2393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420232666118475940}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: mic part 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2403,9 +2430,9 @@ GameObject:
   - component: {fileID: 420232666153091494}
   - component: {fileID: 170659731926274086}
   - component: {fileID: 170659732353250873}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: mic part 1
-  m_TagString: Untagged
+  m_TagString: BoomMic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2466,7 +2493,7 @@ GameObject:
   - component: {fileID: 6017578839012146309}
   - component: {fileID: 2700887783849216350}
   - component: {fileID: 1305570060548758494}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2576,7 @@ GameObject:
   - component: {fileID: 1439589639419451262}
   - component: {fileID: 5218105175869673128}
   - component: {fileID: 7487222247058560613}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: pCylinder10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2632,7 +2659,7 @@ GameObject:
   - component: {fileID: 3551534559423573331}
   - component: {fileID: 5959194543865599149}
   - component: {fileID: 6384214403457706632}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: pCylinder7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2715,7 +2742,7 @@ GameObject:
   - component: {fileID: 5691811315700312184}
   - component: {fileID: 1157734781296538312}
   - component: {fileID: 5107967192487576647}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: pCylinder11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2798,7 +2825,7 @@ GameObject:
   - component: {fileID: 708744322552348665}
   - component: {fileID: 6668050701028156584}
   - component: {fileID: 1910722159002390969}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2881,7 +2908,7 @@ GameObject:
   - component: {fileID: 3608307843886144697}
   - component: {fileID: 605345118274593682}
   - component: {fileID: 3095769893334245574}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
