@@ -79,7 +79,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3191808407791629907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -228,3 +228,4 @@ MonoBehaviour:
   offAxisColor: {r: 1, g: 0, b: 0, a: 1}
   audioLevelUI: {fileID: 0}
   lastAudioLevel: 0
+  speaking: 0

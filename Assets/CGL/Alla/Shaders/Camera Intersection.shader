@@ -66,3 +66,4 @@ Shader "Unlit/Camera Intersection"
             ENDCG
         }
     }
+}

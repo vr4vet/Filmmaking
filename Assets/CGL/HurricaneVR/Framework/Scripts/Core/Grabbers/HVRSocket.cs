@@ -800,7 +800,10 @@ namespace HurricaneVR.Framework.Core.Grabbers
         {
             ForceRelease();
         }
-
+        public void Attach(HVRGrabbable Grabbable)
+        {
+            GrabGrabbable(this, Grabbable);
+        }
 
         protected virtual IEnumerator GrabTimeoutRoutine(HVRGrabbable grabbable)
         {
