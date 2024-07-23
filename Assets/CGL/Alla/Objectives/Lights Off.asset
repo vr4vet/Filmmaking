@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d26a925ddca1cda4cb8f0974b75637c8, type: 3}
-  m_Name: Mic In Frame
+  m_Name: Lights Off
   m_EditorClassIdentifier: 
-  displayTitle: Blocking Frame
-  points: -12
+  displayTitle: Lights Off
+  points: -14
   required: 1
   oneTime: 0
   maxPoints: 0
-  frequency: 4
+  frequency: 5

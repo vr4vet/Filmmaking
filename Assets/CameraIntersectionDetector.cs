@@ -5,58 +5,55 @@ using System.Security.AccessControl;
 using UnityEngine;
 
 [ExecuteAlways]
-public class CameraIntersectionDetector : MonoBehaviour
+public class CameraIntersectionDetector : ObjectiveHandler
 {
     public Camera cam;
     public List<MeshCollider> meshColliders;
     Plane[] camFrustum;
-    public float intersectionSampleTime=1f;
-    bool start;
-    float lastsample = 0;
-    float accscore;
-    int numberOfSamples;
-    public PointObjectiveSO objective;
-    bool overlaping;
-    void Start()
+
+
+
+
+    new void  Start()
     {
         if (cam == null)
         {
             cam = Camera.main;  // Use the main camera if none is specified
         }
         UpdateFrustumMesh();
-        FilmingGameManager.instance.OnStartFilming += () => { start = true; lastsample = Time.time; };
-        FilmingGameManager.instance.OnStopFilming += () => { start = false; };
+        base.Start();
     }
-  
-    private void Update()
+
+    new private void Update()
     {
-        if (!start||!overlaping) return;
-
-        if (Time.time - lastsample > intersectionSampleTime)
+        if (thingsOverlaping > 0)
         {
-            objective.points = (int)(accscore / intersectionSampleTime);
-            PointManager.instance.SolveObjective(objective, (int)accscore);
-            accscore = 0;
-            lastsample = Time.time;
+            ObjectiveOn();
         }
-        accscore -= 1;
+        else
+        {
+            ObjectiveOff();
+        }
+        base.Update();
 
     }
+    int thingsOverlaping;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("BoomMic")&&!overlaping)
+        if (other.CompareTag("BoomMic")|| other.CompareTag("Player")|| other.CompareTag("Stand") )
         {
             Debug.Log("Mic in View");
-            overlaping=true;
-            lastsample=Time.time;
+           
+           
+            thingsOverlaping++;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("BoomMic") && overlaping)
+        if (other.CompareTag("BoomMic") || other.CompareTag("Player") || other.CompareTag("Stand"))
         {
             Debug.Log("Mic in View");
-            overlaping = false;
+            thingsOverlaping--;
         }
     }
     private void FixedUpdate()

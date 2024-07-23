@@ -11,6 +11,7 @@ TagManager:
   - stamp
   - Clapper
   - BoomMic
+  - Stand
   layers:
   - Default
   - TransparentFX

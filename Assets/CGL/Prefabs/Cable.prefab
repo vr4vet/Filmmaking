@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8413826247805880184}
   - component: {fileID: 6716845734696247323}
   - component: {fileID: 5787598038717028533}
-  - component: {fileID: 611337199683923057}
   m_Layer: 0
   m_Name: Cable Grabbable
   m_TagString: Untagged
@@ -192,21 +191,6 @@ MonoBehaviour:
   Tags:
     Tags: {fileID: 11400000, guid: 0e83bcde818c784468e6c9a69d44702f, type: 2}
     _data: 1
---- !u!114 &611337199683923057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171569484305461661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96785e435f4a7a04d84021e497eeb783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Socket: {fileID: 0}
-  ReturnTime: 0
-  PlaySocketedSFX: 1
 --- !u!1 &1771787893872084033
 GameObject:
   m_ObjectHideFlags: 0

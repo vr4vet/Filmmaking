@@ -9,6 +9,8 @@ using FMOD;
 using static UnityEngine.ParticleSystem;
 using static DialogManager;
 using UnityEngine.Events;
+using TMPro;
+
 public class DialogManager : MonoBehaviour
 {
     public static DialogManager Instance;
@@ -34,8 +36,8 @@ public class DialogManager : MonoBehaviour
     int i = -1;
     bool playing;
     EventInstance lastInstance;
-    bool pause = true;
-
+    public bool pause = true;
+    public bool speaking;
     private void Awake()
     {
         if (Instance == null)
@@ -63,6 +65,7 @@ public class DialogManager : MonoBehaviour
             {
                 if (eventsToUnpause[0].Path == dialogsEvents[i].dialogeEvent.Path)
                 {
+                  
                     eventsToUnpause.RemoveAt(0);
                     pause = true;
                     knight.ChangeState(CharacterAnimation.anim.Idle);
@@ -79,6 +82,7 @@ public class DialogManager : MonoBehaviour
     }
     public void PlayNext()
     {
+       
         print("next dialog");
         i++;
         if (i >= dialogsEvents.Count) return;
@@ -105,6 +109,7 @@ public class DialogManager : MonoBehaviour
         }
         lastInstance.start();
         playing = true;
+        pause = false;
     }
     public void UnPause()
     {

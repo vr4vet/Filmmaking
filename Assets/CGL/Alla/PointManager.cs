@@ -17,16 +17,22 @@ public class PointManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    public void SolveObjective(PointObjectiveSO objective,int points)
+    public void SolveObjective(PointObjectiveSO objective,int points,int maxPoints)
     {
         solvedObjectives.TryGetValue(objective, out var result);
         if (result.HasValue)
             if (objective.oneTime)
                 return;
             else
+            {
                 solvedObjectives[objective] = solvedObjectives[objective].Value + points;
+                objective.maxPoints = maxPoints;
+            }
+                
         else
         solvedObjectives.Add(objective,points);
+
+        objective.maxPoints = maxPoints;
         print(objective.displayTitle + ": " + points);
     }
     public void UnSolveObjective(PointObjectiveSO objective)

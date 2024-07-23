@@ -6,15 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/CGL/Alla/Scenes/Main menu.unity
+    guid: a49e7bc16629f854e9af49070c5a0b9e
+  - enabled: 1
+    path: Assets/CGL/HurricaneVR/TechDemo/Scenes/scene_barebones.unity
+    guid: a5e3f22af5069694aa86b11cc47fe55a
+  - enabled: 0
     path: Assets/VR4VET/Scenes/Lobby.unity
     guid: b0e6281ca7be6674ba2d58089943bb52
-  - enabled: 1
+  - enabled: 0
     path: Assets/VR4VET/Scenes/multiplayer scene 1.unity
     guid: 2b716528ea6b22647b18b093cfa50789
   - enabled: 0
     path: Assets/VR4VET/Scenes/MainTestScene.unity
     guid: 73b4c2709fc3d1148ad7b5d42a07f52e
-  - enabled: 1
+  - enabled: 0
     path: Assets/BNG Framework/Scenes/XR Demo.unity
     guid: a1360534006d3f845bc79b46b93cfec5
   - enabled: 0
@@ -26,7 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Rigidbody Player.unity
     guid: 57fc97c5771a777449aa8bd02514df22
-  - enabled: 1
+  - enabled: 0
     path: Assets/BNG Framework/Scenes/Vehicle Example.unity
     guid: d96233ee44d985d4fb8dc23a907c06eb
   - enabled: 0

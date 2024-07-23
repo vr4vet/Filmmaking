@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CableUnpluger : MonoBehaviour
+public class CableUnpluger : ObjectiveHandler
 {
     [SerializeField] HVRSocket socket;
     [SerializeField] float timerMin;
@@ -16,8 +16,10 @@ public class CableUnpluger : MonoBehaviour
     [SerializeField] private ParticleSystem sparksParticles;
 
     [SerializeField] private List<Light> lights  =  new List<Light>();
+    [SerializeField] private List<Material> materials = new List<Material>();
     private float[] intencities;
 
+    
     private void Start()
     {
         intencities = new float[lights.Count];
@@ -27,10 +29,25 @@ public class CableUnpluger : MonoBehaviour
         }
         Vector3 localUpBackDirection = new Vector3(0, 1, -1).normalized;
         Vector3 worldDirection = cableHeadRb.transform.TransformDirection(localUpBackDirection);
+        Detachocket();
+    }
+    private void Update()
+    {
+        if (socket.IsGrabbing)
+        {
+            base.ObjectiveOff();
+         
+
+        }
+        else
+        {
+            base.ObjectiveOn();
+        }
+        base.Update();
     }
     public void StartUnplugTimer()
     {
-        StartCoroutine(DetachSocketed());
+      //  StartCoroutine(DetachSocketed());
     }
 
     private IEnumerator DetachSocketed()
@@ -42,6 +59,13 @@ public class CableUnpluger : MonoBehaviour
         Debug.Log("DO ONLY ONCE");
     }
 
+    public void Detachocket()
+    {
+        socket.Detach();
+        sparksParticles.Play();
+        AddImpulseForce();
+        ShutDownLight();
+    }
     void AddImpulseForce()
     {
         Vector3 localUpBackDirection = cableHeadRb.transform.up + -cableHeadRb.transform.right;
@@ -54,6 +78,10 @@ public class CableUnpluger : MonoBehaviour
         {
             light.intensity = 0;
         }
+        foreach (var mat in materials)
+        {
+            mat.SetColor("_EmissionColor", Color.black);
+        }
     }
 
     public void EnableLight()
@@ -62,6 +90,10 @@ public class CableUnpluger : MonoBehaviour
         for (int i = 0; i < lights.Count; i++)
         {
             lights[i].intensity = intencities[i];
+        }
+        foreach (var mat in materials)
+        {
+            mat.SetColor("_EmissionColor", new Color(2,2,2,2) );
         }
     }
     

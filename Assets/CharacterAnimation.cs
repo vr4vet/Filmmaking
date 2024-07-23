@@ -10,6 +10,7 @@ public class CharacterAnimation : MonoBehaviour
     public CharacterGrabber grabber;
     public GrabbableByCharacter helmet;
     public Transform head;
+    public DoorKnocker door;
     public enum anim
     {
         Idle,Walk,Talk,Hide,Unhide,Attack,Shove,Helmet
@@ -44,5 +45,9 @@ public class CharacterAnimation : MonoBehaviour
         if (!grabber.currentHandGrabbable == helmet) return;
         helmet.parentTransform.transform.SetParent(head, false);
 
+    }
+    public void Knocking()
+    {
+        door.StartKnocking();
     }
 }

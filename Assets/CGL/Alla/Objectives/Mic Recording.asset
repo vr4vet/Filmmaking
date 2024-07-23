@@ -16,3 +16,5 @@ MonoBehaviour:
   points: 10
   required: 1
   oneTime: 0
+  maxPoints: 0
+  frequency: 4
