@@ -54194,6 +54194,13 @@ AnimationClip:
     intParameter: 1
     messageOptions: 0
   - time: 1.1
+    functionName: PlayDialog
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.1
     functionName: ChangeState
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -54202,13 +54209,6 @@ AnimationClip:
     messageOptions: 0
   - time: 1.1
     functionName: PauseAnimation
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.1
-    functionName: PlayDialog
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -54270,6 +54270,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 6.1666665
+    functionName: PauseAnimation
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 7.016667
     functionName: ChangeState
     data: 
@@ -54298,6 +54305,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 15.35
+    functionName: PlayDialog
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 16.533333
     functionName: ChangeState
     data: 
@@ -54307,6 +54321,13 @@ AnimationClip:
     messageOptions: 0
   - time: 17.416666
     functionName: WearHelmet
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 18.633333
+    functionName: PlayDialog
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
