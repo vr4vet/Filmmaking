@@ -14,6 +14,8 @@ public class FilmingGameManager : MonoBehaviour
     public UnityAction OnStopFilming;
     public float waitFilming = 5f;
     public Material playerFade;
+    public CharacterAnimation princess;
+    public CharacterAnimation knight;
     public bool startedFilming { get; private set; }
     private void Awake()
     {
@@ -23,6 +25,10 @@ public class FilmingGameManager : MonoBehaviour
             Destroy(this);
 
         playerFade.DOColor(new Color( playerFade.color.r, playerFade.color.g, playerFade.color.b,0),3);
+    }
+    private void Start()
+    {
+       // StartFilming();
     }
     public IEnumerator WaitFilming()
     {
@@ -40,8 +46,11 @@ public class FilmingGameManager : MonoBehaviour
     }
     public void StartFilming()
     {
+       
         startedFilming=true;
         StartCoroutine(WaitFilming());
+        princess.UnPauseAnimation();
+        knight.UnPauseAnimation();
         OnStartFilming.Invoke();
     }
 }

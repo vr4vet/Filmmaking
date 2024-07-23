@@ -1244,7 +1244,7 @@ Animator:
   m_GameObject: {fileID: 552610680219547740}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 46c0e77878b4ab04393e1a5dd92f3463, type: 2}
+  m_Controller: {fileID: 22100000, guid: 3c4a36186cd1f6e4b84550a86c5b34c6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1742,6 +1742,8 @@ GameObject:
   - component: {fileID: 822520105888933449}
   - component: {fileID: 822520105888933495}
   - component: {fileID: 822520105888933494}
+  - component: {fileID: 200508200}
+  - component: {fileID: 200508199}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -1819,6 +1821,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headTransform: {fileID: 822520106330907536}
   handTransform: {fileID: 822520105681166987}
+--- !u!95 &200508200
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822520105888933450}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c215b3aa667c42145919f65a340f5b25, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &200508199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822520105888933450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9eebd37a63eb249b100aec78a65d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootAnimator: {fileID: 200508200}
+  characterAnimator: {fileID: 822520106115368202}
+  grabber: {fileID: 0}
+  helmet: {fileID: 0}
+  head: {fileID: 0}
 --- !u!1 &822520106330907537
 GameObject:
   m_ObjectHideFlags: 0
