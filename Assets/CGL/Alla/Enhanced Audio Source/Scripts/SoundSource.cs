@@ -171,7 +171,7 @@ public class SoundSource : MonoBehaviour
             //angleToFreq = angleToPlayer * lpfFreqMulti;
             float volume = evaluatedVolume * Mathf.Clamp(1 - (angel / listener.angel), 0, 1) * distanceToVolumeCurve.Evaluate(Mathf.Clamp(1 - (distance / listener.distance), 0, 1));
             audioSource.setParameterByName("Axis(Off-On)", volume);
-            audioLevelUI.SetValue(volume);
+            audioLevelUI?.SetValue(volume);
             lastAudioLevel = volume;
         }
    

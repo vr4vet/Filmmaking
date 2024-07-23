@@ -7,10 +7,12 @@ using FMOD.Studio;
 using static UnityEngine.InputManagerEntry;
 using FMOD;
 using static UnityEngine.ParticleSystem;
-
+using static DialogManager;
+using UnityEngine.Events;
 public class DialogManager : MonoBehaviour
 {
     public static DialogManager Instance;
+    public List<EventReference> eventsToUnpause = new List<EventReference>();
     public enum speaker
     {
         knight, princess
@@ -26,11 +28,13 @@ public class DialogManager : MonoBehaviour
     public SoundSource knightSoundSource;
     public SoundSource princessSoundSource;
     public speaker currentSpeaker;
-
-
+    public UnityEvent OnspeakingEnded;
+    public CharacterAnimation princess;
+    public CharacterAnimation knight;
     int i = -1;
     bool playing;
     EventInstance lastInstance;
+    bool pause = true;
 
     private void Awake()
     {
@@ -40,12 +44,38 @@ public class DialogManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!FilmingGameManager.instance.startedFilming) return;
+        if (!FilmingGameManager.instance.startedFilming||pause) return;
         FMOD.Studio.PLAYBACK_STATE state;
         lastInstance.getPlaybackState(out state);
         if (state==FMOD.Studio.PLAYBACK_STATE.STOPPED)
             playing = false;
-        if (!playing && i < dialogsEvents.Count) { PlayNext(); }
+
+       
+
+        if (!playing && i < dialogsEvents.Count) 
+        {
+            if (i < 0)
+            {
+                PlayNext();
+                return;
+            }
+            else
+            {
+                if (eventsToUnpause[0].Path == dialogsEvents[i].dialogeEvent.Path)
+                {
+                    eventsToUnpause.RemoveAt(0);
+                    pause = true;
+                    knight.ChangeState(CharacterAnimation.anim.Idle);
+                    princess.ChangeState(CharacterAnimation.anim.Idle);
+                    OnspeakingEnded.Invoke();
+                    return;
+                }
+            }
+          
+           
+            PlayNext(); 
+        
+        }
     }
     public void PlayNext()
     {
@@ -55,23 +85,35 @@ public class DialogManager : MonoBehaviour
         lastInstance.release();
         Dialog dialog = dialogsEvents[i];
         lastInstance = FMODUnity.RuntimeManager.CreateInstance(dialog.dialogeEvent);
+        lastInstance.setPitch(100);
         currentSpeaker = dialog.speaker;
         if (dialog.speaker == speaker.knight)
         {
             knightSoundSource.audioSource = lastInstance;
             knightSoundSource.speaking = true;
             princessSoundSource.speaking = false;
+            princess.ChangeState(CharacterAnimation.anim.Idle);
+            knight.ChangeState(CharacterAnimation.anim.Talk);
         }
         else
         {
             princessSoundSource.audioSource = lastInstance;
             knightSoundSource.speaking = false;
             princessSoundSource.speaking = true;
+            knight.ChangeState(CharacterAnimation.anim.Idle);
+            princess.ChangeState(CharacterAnimation.anim.Talk);
         }
         lastInstance.start();
         playing = true;
     }
-
+    public void UnPause()
+    {
+        pause = false;
+    }
+    public void Pause()
+    {
+        pause=true; 
+    }
     public float GetAccuracyFromCurrentSpeaker()
     {
         return (currentSpeaker == speaker.princess) ? princessSoundSource.lastAudioLevel:knightSoundSource.lastAudioLevel;

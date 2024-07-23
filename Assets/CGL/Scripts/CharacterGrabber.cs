@@ -14,8 +14,8 @@ public class CharacterGrabber : MonoBehaviour
     private bool isHandBuzy;
     private bool isHeadBuzy;
 
-    private GrabbableByCharacter currentHandGrabbable;
-    private GrabbableByCharacter currentHeadGrabbable;
+    public GrabbableByCharacter currentHandGrabbable{get;private set;}
+    public GrabbableByCharacter currentHeadGrabbable { get; private set; }
 
     private Transform cachTransform;
 
@@ -29,7 +29,7 @@ public class CharacterGrabber : MonoBehaviour
         GrabbableByCharacter prop = other.GetComponent<GrabbableByCharacter>();
 
         if (prop &&
-            prop.canSnap && !prop.hvrGrabbable.IsHandGrabbed)
+            prop.canSnap && !prop.hvrGrabbable.IsHandGrabbed )
         {
             prop.SetCurrentCharacter(this);
             prop.canSnap = false;
@@ -96,12 +96,14 @@ public class CharacterGrabber : MonoBehaviour
 
     public void ResetCurrentHead(HVRHandGrabber x, HVRGrabbable y)
     {
+        currentHeadGrabbable.parentTransform.transform.SetParent(cachTransform);
         currentHeadGrabbable.hvrGrabbable.HandGrabbed.RemoveListener(ResetCurrentHead);
         currentHeadGrabbable = null;
     }
 
     public void ResetCurrentHand(HVRHandGrabber x, HVRGrabbable y)
     {
+        currentHandGrabbable.parentTransform.transform.SetParent(cachTransform);
         currentHandGrabbable.hvrGrabbable.HandGrabbed.RemoveListener(ResetCurrentHand);
         currentHandGrabbable = null;
     }
