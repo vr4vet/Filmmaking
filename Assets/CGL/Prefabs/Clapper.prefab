@@ -5029,6 +5029,7 @@ GameObject:
   - component: {fileID: 4678561626685138479}
   - component: {fileID: 4678561626685138476}
   - component: {fileID: 1954854255}
+  - component: {fileID: 40765422125168666}
   m_Layer: 10
   m_Name: Cube
   m_TagString: Clapper
@@ -5359,3 +5360,20 @@ MonoBehaviour:
   Tags:
     Tags: {fileID: 11400000, guid: 0e83bcde818c784468e6c9a69d44702f, type: 2}
     _data: 1
+--- !u!114 &40765422125168666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4678561626685138487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ff22f8a1d07c04a9470317886c4d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forWhatSocket: 1
+  rb: {fileID: 4678561626685138482}
+  hvrGrabbable: {fileID: 4678561626685138477}
+  parentTransform: {fileID: 4678561626685138487}
+  canSnap: 1

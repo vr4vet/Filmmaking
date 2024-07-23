@@ -2034,6 +2034,7 @@ GameObject:
   - component: {fileID: 170659731768478336}
   - component: {fileID: 4146298696543648527}
   - component: {fileID: 4803644691682570137}
+  - component: {fileID: 2492411568381805779}
   m_Layer: 10
   m_Name: Boom Mic extendable
   m_TagString: BoomMic
@@ -2351,6 +2352,23 @@ CapsuleCollider:
   m_Height: 0.53722084
   m_Direction: 1
   m_Center: {x: -0.000000007601326, y: 0.24014717, z: 0.000000117257535}
+--- !u!114 &2492411568381805779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170659732532178017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ff22f8a1d07c04a9470317886c4d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forWhatSocket: 1
+  rb: {fileID: 170659732532178030}
+  hvrGrabbable: {fileID: 170659732532178029}
+  parentTransform: {fileID: 170659732532178017}
+  canSnap: 1
 --- !u!1 &1053604606595907219
 GameObject:
   m_ObjectHideFlags: 0

@@ -1847,7 +1847,7 @@ Camera:
     height: 1
   near clip plane: 0.4
   far clip plane: 8
-  field of view: 41.7
+  field of view: 34
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: 0
+  m_RendererIndex: 1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -8024,6 +8024,7 @@ MonoBehaviour:
   StartPosition: {x: -0.711, y: 0, z: 0}
   EndPosition: {x: 0.784, y: 0, z: 0}
   OpenPosition: {x: 0, y: 0, z: 0}
+  keepStartPos: 1
   UpdateSpring: 0
   PreviousOpened: 0
   Opened: 0

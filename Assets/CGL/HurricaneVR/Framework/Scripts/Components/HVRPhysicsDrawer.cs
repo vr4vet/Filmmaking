@@ -39,7 +39,7 @@ namespace HurricaneVR.Framework.Components
         public Vector3 EndPosition;
 
         public Vector3 OpenPosition;
-
+        public bool keepStartPos;
         // Variables to store initial configuration
         private ConfigurableJointMotion initialXMotion;
         private ConfigurableJointMotion initialYMotion;
@@ -57,7 +57,7 @@ namespace HurricaneVR.Framework.Components
         public bool Opened;
         public bool PreviousClosed;
         public bool Closed;
-
+ 
         public Rigidbody Rigidbody { get; private set; }
 
         private Vector3 _axis;
@@ -67,6 +67,7 @@ namespace HurricaneVR.Framework.Components
 
         protected virtual void Awake()
         {
+            if(!keepStartPos)
             transform.localPosition = StartPosition;
             Rigidbody = GetComponent<Rigidbody>();
             _axis = Axis.GetVector();

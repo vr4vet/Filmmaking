@@ -1283,6 +1283,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentGrabbable: {fileID: 0}
+--- !u!114 &3013701067082880109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3777430570433667824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ff22f8a1d07c04a9470317886c4d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forWhatSocket: 1
+  rb: {fileID: 4084000455832800012}
+  hvrGrabbable: {fileID: 4084000455832800015}
+  parentTransform: {fileID: 4084000455832800018}
+  canSnap: 1
 --- !u!4 &4550871736238094410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 228ebed2405b8294196f4ca47996704e,
