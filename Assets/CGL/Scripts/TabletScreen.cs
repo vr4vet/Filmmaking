@@ -5,24 +5,31 @@ using UnityEngine.UI;
 
 public class TabletScreen : MonoBehaviour
 {
-    [SerializeField] private List<Sprite> images = new List<Sprite>();
-    [SerializeField] private Image display;
+    [SerializeField] private List<Sprite> tutorialImages = new List<Sprite>();
+    [SerializeField] private Image tutorialImage;
+    [SerializeField] private GameObject tutorialDisplay;
+    [SerializeField] private GameObject sceneScriptPanel;
 
     private int imageIndex = 0;
 
+
+    private void Start()
+    {
+        tutorialDisplay.SetActive(false);
+    }
     public void NextImage()
     {
-        imageIndex = (imageIndex + 1) % images.Count;
+        imageIndex = (imageIndex + 1) % tutorialImages.Count;
 
-        display.sprite = images[imageIndex];
+        tutorialImage.sprite = tutorialImages[imageIndex];
 
     }
 
     public void PrevImage()
     {
-        imageIndex = (imageIndex - 1 + images.Count) % images.Count;
+        imageIndex = (imageIndex - 1 + tutorialImages.Count) % tutorialImages.Count;
 
-        display.sprite = images[imageIndex];
+        tutorialImage.sprite = tutorialImages[imageIndex];
     }
 
 
@@ -38,5 +45,24 @@ public class TabletScreen : MonoBehaviour
         {
             NextImage();
         }
+    }
+
+    public void enableTutorial()
+    {
+            tutorialDisplay.SetActive(true);
+    }
+    public void disableTutorial()
+    {
+        tutorialDisplay.SetActive(false);
+    }
+
+    public void enableSceneScript()
+    {
+        sceneScriptPanel.SetActive(true);
+    }
+
+    public void disableSceneScript()
+    {
+        sceneScriptPanel.SetActive(false);
     }
 }
