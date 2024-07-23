@@ -1,4 +1,5 @@
 using HurricaneVR.Framework.Core;
+using HurricaneVR.Framework.Core.Grabbers;
 using HurricaneVR.Framework.Core.Utils;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,13 +17,20 @@ public class CharacterGrabber : MonoBehaviour
     private GrabbableByCharacter currentHandGrabbable;
     private GrabbableByCharacter currentHeadGrabbable;
 
-    private void OnTriggerEnter(Collider other)
-    {
+    private Transform cachTransform;
 
-        if (other.GetComponent<GrabbableByCharacter>() && 
-            other.GetComponent<GrabbableByCharacter>().canSnap)
+    private void OnTriggerStay(Collider other)
+    {
+        Grabbing(other);
+    }
+
+    private void Grabbing(Collider other)
+    {
+        GrabbableByCharacter prop = other.GetComponent<GrabbableByCharacter>();
+
+        if (prop &&
+            prop.canSnap && !prop.hvrGrabbable.IsHandGrabbed)
         {
-            GrabbableByCharacter prop = other.GetComponent<GrabbableByCharacter>();
             prop.SetCurrentCharacter(this);
             prop.canSnap = false;
             DisablePhysicsGrabbing(prop);
@@ -30,28 +38,40 @@ public class CharacterGrabber : MonoBehaviour
             {
                 if (currentHeadGrabbable != null)
                 {
+                    currentHeadGrabbable.hvrGrabbable.HandGrabbed.RemoveListener(ResetCurrentHead);
                     EnablePhysicsGrabbing(currentHeadGrabbable);
                 }
+                cachTransform = prop.parentTransform.transform.parent;
                 SnapToHead(prop.parentTransform);
                 currentHeadGrabbable = prop;
+                currentHeadGrabbable.hvrGrabbable.HandGrabbed.AddListener(ResetCurrentHead);
             }
             else if (prop.forWhatSocket == SocketType.Hand)
             {
                 if (currentHandGrabbable != null)
                 {
+                    currentHandGrabbable.hvrGrabbable.HandGrabbed.RemoveListener(ResetCurrentHand);
                     EnablePhysicsGrabbing(currentHandGrabbable);
                 }
+                cachTransform = prop.parentTransform.transform.parent;
                 SnapToHand(prop.parentTransform);
                 currentHandGrabbable = prop;
+                currentHandGrabbable.hvrGrabbable.HandGrabbed.AddListener(ResetCurrentHand);
             }
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Grabbing(other);
+    }
+
     private void EnablePhysicsGrabbing(GrabbableByCharacter obj)
     {
+        obj.parentTransform.transform.SetParent(cachTransform);
         obj.rb.isKinematic = false;
         obj.rb.AddForce(new Vector3(0f, 1f, 1f) * 2, ForceMode.Impulse);
-        obj.ResetCanSnap(); 
+        //obj.ResetCanSnap(); 
     }
 
     private void DisablePhysicsGrabbing(GrabbableByCharacter obj)
@@ -74,13 +94,15 @@ public class CharacterGrabber : MonoBehaviour
         obj.transform.localRotation = Quaternion.Euler(Vector3.zero);
     }
 
-    public void ResetCurrentHead()
+    public void ResetCurrentHead(HVRHandGrabber x, HVRGrabbable y)
     {
+        currentHeadGrabbable.hvrGrabbable.HandGrabbed.RemoveListener(ResetCurrentHead);
         currentHeadGrabbable = null;
     }
 
-    public void ResetCurrentHand()
+    public void ResetCurrentHand(HVRHandGrabber x, HVRGrabbable y)
     {
+        currentHandGrabbable.hvrGrabbable.HandGrabbed.RemoveListener(ResetCurrentHand);
         currentHandGrabbable = null;
     }
 

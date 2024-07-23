@@ -1722,14 +1722,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822520105681166988}
-  m_LocalRotation: {x: -0.6243831, y: -0.42620027, z: -0.5672444, w: -0.32670006}
-  m_LocalPosition: {x: 0.000045355333, y: 0.00097350375, z: -0.00031578893}
+  m_LocalRotation: {x: 0.63592184, y: 0.735474, z: -0.16797683, w: 0.1626814}
+  m_LocalPosition: {x: -0.00138, y: 0.00078, z: -0.00026}
   m_LocalScale: {x: 0.009999997, y: 0.010000002, z: 0.010000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1835656822898999066}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 27, y: 178.35, z: 81.3}
 --- !u!1 &822520105888933450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1756,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822520105888933450}
-  m_LocalRotation: {x: -0, y: 0.26661384, z: -0, w: 0.96380347}
+  m_LocalRotation: {x: 0, y: 0.26661605, z: 0, w: 0.9638029}
   m_LocalPosition: {x: -0.6995157, y: 0.15000004, z: -0.99585855}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1801,10 +1801,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.33
-  m_Height: 1.88
+  m_Radius: 0.25
+  m_Height: 1.6
   m_Direction: 1
-  m_Center: {x: 0, y: 0.66, z: 0}
+  m_Center: {x: 0, y: 0.66, z: -0.1}
 --- !u!114 &822520105888933494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1843,7 +1843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822520106330907537}
   m_LocalRotation: {x: 0.062261228, y: 0.000033915047, z: -0.000002125278, w: -0.9980599}
-  m_LocalPosition: {x: -0.0035465572, y: 1.6405911, z: -0.15598418}
+  m_LocalPosition: {x: -0.002, y: 1.462, z: -0.11}
   m_LocalScale: {x: 0.95934963, y: 0.95934975, z: 0.95934975}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23614,6 +23614,11 @@ PrefabInstance:
         type: 3}
       propertyPath: distanceToVolumeCurve.m_Curve.Array.data[1].outWeight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7071928951427678464, guid: f4178dc2bbf4f45869a396b70764e157,
+        type: 3}
+      propertyPath: onAxisToOffAxisCurve.m_Curve.Array.data[1].weightedMode
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7071928951427678465, guid: f4178dc2bbf4f45869a396b70764e157,
         type: 3}

@@ -27,16 +27,17 @@ public class GrabbableByCharacter : MonoBehaviour
 
     public void ResetCanSnap()
     {
-        StartCoroutine(CanSnap());
+        canSnap = true;
+        //StartCoroutine(CanSnap());
         if (currentCharacter == null) return;
-        if (forWhatSocket == SocketType.Head)
+        /*if (forWhatSocket == SocketType.Head)
         {
             currentCharacter.ResetCurrentHead();
         }
         else if (forWhatSocket == SocketType.Hand)
         {
             currentCharacter.ResetCurrentHand();
-        }
+        }*/
         currentCharacter = null;
     }
 

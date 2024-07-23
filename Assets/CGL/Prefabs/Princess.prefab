@@ -24511,14 +24511,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8072867377873956837}
-  m_LocalRotation: {x: -0.71060556, y: -0.36062318, z: -0.43460298, w: -0.4196558}
-  m_LocalPosition: {x: -0.00022999894, y: 0.0012499994, z: -0.00044999988}
+  m_LocalRotation: {x: -0.64874285, y: -0.74342066, z: 0.1501142, w: -0.06264417}
+  m_LocalPosition: {x: -0.00133, y: 0.0009, z: -0.00022}
   m_LocalScale: {x: 0.009999995, y: 0.01, z: 0.009999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7069291944296903088}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -22.15, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.727, y: 186.125, z: 83.175}
 --- !u!1 &8072867378053814847
 GameObject:
   m_ObjectHideFlags: 0
@@ -24543,7 +24543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8072867378053814847}
   m_LocalRotation: {x: -0.033815272, y: -0.029839443, z: -0.038966276, w: -0.99822235}
-  m_LocalPosition: {x: -0.007848974, y: 0.0596276, z: -0.09365988}
+  m_LocalPosition: {x: -0.007, y: -0.084, z: -0.097}
   m_LocalScale: {x: 0.7943952, y: 0.79439557, z: 0.79439545}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24575,7 +24575,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8072867378386802922}
-  m_LocalRotation: {x: -0, y: -0.17888196, z: -0, w: 0.98387057}
+  m_LocalRotation: {x: 0, y: -0.17887948, z: 0, w: 0.98387104}
   m_LocalPosition: {x: 0.082, y: 0.14140594, z: -0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24594,10 +24594,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.33
-  m_Height: 1.79
+  m_Radius: 0.31
+  m_Height: 1.41
   m_Direction: 1
-  m_Center: {x: 0, y: 0.66, z: 0}
+  m_Center: {x: 0, y: 0.88, z: -0.09}
 --- !u!114 &8072867378386802927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27759,6 +27759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: distanceToVolumeCurve.m_Curve.Array.data[1].outWeight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7071928951427678464, guid: f4178dc2bbf4f45869a396b70764e157,
+        type: 3}
+      propertyPath: onAxisToOffAxisCurve.m_Curve.Array.data[1].weightedMode
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7071928951427678465, guid: f4178dc2bbf4f45869a396b70764e157,
         type: 3}
