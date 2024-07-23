@@ -38,6 +38,7 @@ public class DialogManager : MonoBehaviour
     EventInstance lastInstance;
     public bool pause = true;
     public bool speaking;
+    public float pitch = 1f;
     private void Awake()
     {
         if (Instance == null)
@@ -89,7 +90,7 @@ public class DialogManager : MonoBehaviour
         lastInstance.release();
         Dialog dialog = dialogsEvents[i];
         lastInstance = FMODUnity.RuntimeManager.CreateInstance(dialog.dialogeEvent);
-        lastInstance.setPitch(100);
+        lastInstance.setPitch(pitch);
         currentSpeaker = dialog.speaker;
         if (dialog.speaker == speaker.knight)
         {
