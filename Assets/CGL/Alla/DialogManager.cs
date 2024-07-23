@@ -115,6 +115,8 @@ public class DialogManager : MonoBehaviour
     public void UnPause()
     {
         pause = false;
+        princess.PauseAnimation();
+        knight.PauseAnimation();
     }
     public void Pause()
     {
