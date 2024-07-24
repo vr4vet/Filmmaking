@@ -68773,8 +68773,8 @@ AnimationClip:
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
-  - time: 0.46666667
-    functionName: Knocking
+  - time: 1.1
+    functionName: PlayDialog
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -68789,13 +68789,6 @@ AnimationClip:
     messageOptions: 0
   - time: 1.1
     functionName: PauseAnimation
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.1
-    functionName: PlayDialog
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -68816,13 +68809,20 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 1.15
-    functionName: PauseAnimation
+    functionName: Knocking
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 1.1666666
+    functionName: PauseAnimation
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.1833333
     functionName: ChangeState
     data: 
     objectReferenceParameter: {fileID: 0}

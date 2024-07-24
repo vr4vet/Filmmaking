@@ -29,7 +29,7 @@ public class CableUnpluger : ObjectiveHandler
         }
         Vector3 localUpBackDirection = new Vector3(0, 1, -1).normalized;
         Vector3 worldDirection = cableHeadRb.transform.TransformDirection(localUpBackDirection);
-        //Detachocket();
+        Detachocket();
     }
     private void Update()
     {
