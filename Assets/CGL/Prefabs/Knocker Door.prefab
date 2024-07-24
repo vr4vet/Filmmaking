@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 4328846316528205445}
   - component: {fileID: 4328846316528205444}
   - component: {fileID: 2350631756294738974}
+  - component: {fileID: 3695874808336505638}
   m_Layer: 0
   m_Name: Knocker Door
   m_TagString: Untagged
@@ -401,6 +402,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!168 &3695874808336505638
+AudioEchoFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328846316528205450}
+  m_Enabled: 1
+  m_Delay: 10
+  m_DecayRatio: 0.5
+  m_WetMix: 1
+  m_DryMix: 1
 --- !u!1 &4328846316711218445
 GameObject:
   m_ObjectHideFlags: 0
