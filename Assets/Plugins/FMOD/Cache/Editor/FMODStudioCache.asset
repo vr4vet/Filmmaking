@@ -1,0 +1,1335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8525320456719470385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 5/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-8090093500815574057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 11/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7285538967217363055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 4/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7086424065722424543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 4
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 4
+  Guid:
+    Data1: -1372503802
+    Data2: 1100951805
+    Data3: 183913139
+    Data4: -627549734
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7285538967217363055}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-7045741629842212789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 7 - Fighting/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6895715012796005131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 9/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6513661170132311309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 6
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 6
+  Guid:
+    Data1: 768273881
+    Data2: 1170438115
+    Data3: 921395621
+    Data4: 850817852
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9033997229612796231}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &-5660045966823352502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 3
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 3
+  Guid:
+    Data1: -1272510911
+    Data2: 1279057787
+    Data3: 1355161515
+    Data4: 956074312
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2378108882124661055}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &-5535095283824212945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 9 - PantingAfter/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5508775165832455506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638570238903511119
+  FileSizes:
+  - Name: 
+    Value: 1712
+  Exists: 1
+--- !u!114 &-5441969702566719157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 5
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 5
+  Guid:
+    Data1: -1298243247
+    Data2: 1287154348
+    Data3: -287112539
+    Data4: -494068087
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6843876301386016053}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-5313088560393676079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 5
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 5
+  Guid:
+    Data1: 1017017683
+    Data2: 1257775535
+    Data3: 1578226365
+    Data4: 211263350
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8525320456719470385}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17500
+--- !u!114 &-4778592306555439574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 1
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 1
+  Guid:
+    Data1: -2092734484
+    Data2: 1211801153
+    Data3: 713798306
+    Data4: -2036460214
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5256354290009243409}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6500
+--- !u!114 &-4110962704897356382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 7/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3797808107882939978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TestEvent/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3716548936566495380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TestEvent
+  m_EditorClassIdentifier: 
+  Path: event:/TestEvent
+  Guid:
+    Data1: -1206184503
+    Data2: 1243246602
+    Data3: 177960613
+    Data4: 1935108376
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3797808107882939978}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 176065
+--- !u!114 &-3675226107358916726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 6
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 6
+  Guid:
+    Data1: -735819670
+    Data2: 1322762298
+    Data3: 1351445658
+    Data4: 1361232810
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 830244577438344436}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36000
+--- !u!114 &-3220160920232244120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638570238903491104
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3119155626926527814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 11
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 11
+  Guid:
+    Data1: -1484571833
+    Data2: 1260716343
+    Data3: -228921972
+    Data4: 494111674
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8090093500815574057}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
+--- !u!114 &-2400340535575033045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 3/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2378108882124661055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 3/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1905475552144376778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 3
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 3
+  Guid:
+    Data1: -1092656223
+    Data2: 1084918030
+    Data3: 889815721
+    Data4: -1351478527
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2400340535575033045}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &-1777093210327546026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 2
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 2
+  Guid:
+    Data1: -827763009
+    Data2: 1130265433
+    Data3: 2099221177
+    Data4: 1533963568
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8229915746343025614}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
+--- !u!114 &-1201209548668102338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 9/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-614469242502050644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 8
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 8
+  Guid:
+    Data1: -689483013
+    Data2: 1091883001
+    Data3: -1437331034
+    Data4: -892431838
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7971780741733741557}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-399023608611479569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 7
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 7
+  Guid:
+    Data1: -1985676318
+    Data2: 1264883982
+    Data3: 1036437951
+    Data4: -1151174245
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4110962704897356382}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -5508775165832455506}
+  - {fileID: -3220160920232244120}
+  EditorEvents:
+  - {fileID: -3716548936566495380}
+  - {fileID: -7086424065722424543}
+  - {fileID: 3290207584971778507}
+  - {fileID: 8450372178626734575}
+  - {fileID: -5660045966823352502}
+  - {fileID: -3119155626926527814}
+  - {fileID: -5441969702566719157}
+  - {fileID: -5313088560393676079}
+  - {fileID: 3538171900369554409}
+  - {fileID: 4068565141585402198}
+  - {fileID: 3204221972851459188}
+  - {fileID: -3675226107358916726}
+  - {fileID: 7689057879642354}
+  - {fileID: 2877007529883240132}
+  - {fileID: -1905475552144376778}
+  - {fileID: 8906862028856358791}
+  - {fileID: 3951096974950913775}
+  - {fileID: 3175062650103536528}
+  - {fileID: -1777093210327546026}
+  - {fileID: -6513661170132311309}
+  - {fileID: -399023608611479569}
+  - {fileID: -4778592306555439574}
+  - {fileID: 2870782119311771248}
+  - {fileID: -614469242502050644}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -3220160920232244120}
+  StringsBanks:
+  - {fileID: -5508775165832455506}
+  cacheTime: 638570238903511119
+  cacheVersion: 131618
+--- !u!114 &7689057879642354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 2
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 2
+  Guid:
+    Data1: 1368349045
+    Data2: 1265877335
+    Data3: 2137705864
+    Data4: -1589912411
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7027020892842310546}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 24500
+--- !u!114 &476536719325322304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 7/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &830244577438344436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 6/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2444441631895534102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 1/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2870782119311771248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 7 - Fighting
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 7 - Fighting
+  Guid:
+    Data1: -1844389906
+    Data2: 1082256047
+    Data3: 141280658
+    Data4: -571870245
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7045741629842212789}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &2877007529883240132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 9 - PantingAfter
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 9 - PantingAfter
+  Guid:
+    Data1: -850546533
+    Data2: 1112401574
+    Data3: 1040971395
+    Data4: 608996219
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5535095283824212945}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &3175062650103536528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 7
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 7
+  Guid:
+    Data1: -1723413069
+    Data2: 1241622604
+    Data3: -703171688
+    Data4: 1771565580
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 476536719325322304}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &3204221972851459188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 10
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 10
+  Guid:
+    Data1: -110321571
+    Data2: 1091613460
+    Data3: 1290934657
+    Data4: -30416348
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5619444545574075605}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &3252936035723495016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 10/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &3290207584971778507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 10
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 10
+  Guid:
+    Data1: 247995420
+    Data2: 1281667967
+    Data3: -1993922922
+    Data4: 289636681
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3252936035723495016}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
+--- !u!114 &3538171900369554409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 9
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 9
+  Guid:
+    Data1: -2129405611
+    Data2: 1131777947
+    Data3: -1754462061
+    Data4: 588077314
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1201209548668102338}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
+--- !u!114 &3951096974950913775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 4
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 4
+  Guid:
+    Data1: -686991696
+    Data2: 1206402200
+    Data3: -1258847860
+    Data4: -307754970
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7108161560841217179}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7000
+--- !u!114 &4068565141585402198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 1
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 1
+  Guid:
+    Data1: 350799963
+    Data2: 1180998796
+    Data3: 747511712
+    Data4: -151860867
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2444441631895534102}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13500
+--- !u!114 &5256354290009243409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 1/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5619444545574075605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 10/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6843876301386016053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 5/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7027020892842310546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 2/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7108161560841217179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 4/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7971780741733741557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 8/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8229915746343025614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/KL 2/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8450372178626734575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Knight Lines/KL 9
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Knight Lines/KL 9
+  Guid:
+    Data1: -966995668
+    Data2: 1338723615
+    Data3: -1133873752
+    Data4: -243811687
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6895715012796005131}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
+--- !u!114 &8906862028856358791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Script Lines/Princess Lines/PL 8
+  m_EditorClassIdentifier: 
+  Path: event:/Script Lines/Princess Lines/PL 8
+  Guid:
+    Data1: -1621741657
+    Data2: 1240178134
+    Data3: -2015357053
+    Data4: -243139426
+  Banks:
+  - {fileID: -3220160920232244120}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8948990805360296145}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &8948990805360296145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 8/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &9033997229612796231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PL 6/Axis(Off-On)
+  m_EditorClassIdentifier: 
+  Name: Axis(Off-On)
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 482886263
+    data2: 1044714669
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

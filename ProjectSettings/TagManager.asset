@@ -7,6 +7,11 @@ TagManager:
   - YrkesTitle
   - OcupationName
   - Title
+  - projectile
+  - stamp
+  - Clapper
+  - BoomMic
+  - Stand
   layers:
   - Default
   - TransparentFX
@@ -21,15 +26,15 @@ TagManager:
   - Grabbable
   - Structure
   - Grab
+  - DynamicPose
+  - Marker
   - 
   - 
   - 
   - 
+  - CamIntersect
   - 
-  - 
-  - 
-  - 
-  - 
+  - Hand
   - 
   - 
   - 
